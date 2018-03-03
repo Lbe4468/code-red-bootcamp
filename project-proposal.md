@@ -23,4 +23,48 @@ APIs to be Used:
 	3. WGER workouts API
 
 Tasks Breakdown:
-	- TBD...
+	- Landing Page
+			- Create Account option
+					- Form for Name, Email, DOB, Password
+			- Login option
+
+	- Questionnaire
+			- Questions and logic that determines what category users falls into
+
+	- JSON
+			- Stores workouts
+					1. Inactive category- 10 workouts per subcategory
+						- Lose weight
+						- Build mass
+						- Maintain 
+					2. Intermediate category- 10 workouts per subcategory  
+						- Lose weight
+						- Build mass
+						- Maintain
+					3. Intense- 10 workouts per subcategory
+						- Lose weight
+						- Build mass
+						- Maintain
+
+	- User Dashboard
+			- Displays user profile: name, age, workout profile/category
+			- Displays workouts based on user selected criteria
+
+	- Javascript
+			- Functions that cycle through questions and store user answers
+			- Functions that pull workouts stored in JSON based on user input, manipulate DOM and display data in user dashboard
+			- 
+	
+	- Bootstrap
+			- handle style and layout of pages
+			- 
+
+	- Firebase
+			- Store user profile/data
+			- 
+
+	- API
+			- section on dashboard where user can search different types of exercises and receive videos/tutorials
+
+
+
