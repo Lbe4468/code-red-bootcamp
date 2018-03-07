@@ -58,5 +58,9 @@ p {
 }
 
 footer.page-footer {
-  margin: 0;
+	margin: 0;
+}
+
+.nav-wrapper{
+	color: #333;
 }
