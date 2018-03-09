@@ -12,24 +12,40 @@
 	<!-- Compiled and minified CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" media="screen,projection" href="assets/css/materialize.css"/>
+	<link rel="stylesheet" type="text/css" media="screen,projection" href="assets/css/materialize.css" />
 	<link rel="stylesheet" type="text/css" media="screen,projection" href="assets/css/style.css">
 	<title>Dashboard</title>
 </head>
 
 <body>
-	<nav class="white" role="navigation">
+	<nav class="black" role="navigation">
 		<div class="nav-wrapper container">
-			<a id="logo-container" href="#" class="brand-logo red-text">Code Red Bootcamp</a>
-			<ul class="right hide-on-med-and-down">
+			<a id="logo-container" href="index.html" class="brand-logo">
+				<img src="https://tse1.mm.bing.net/th?id=OIP.ssIg8j9mVw7t9xF7U42sHwHaCl&pid=15.1&P=0&w=235&h=65">
+			</a>
+			<ul class="right hide-on-med-and-down" id="navMenu">
 				<li>
-					<a href="#">Navbar Link</a>
+					<a href="dashboard.html">Dashboard</a>
+				</li>
+				<li>
+					<a href="#">Demos</a>
+				</li>
+				<li>
+
+					<a href="https://www.myfitnesspal.com/account/login">MyFitnessPal</a>
+
 				</li>
 			</ul>
 
 			<ul id="nav-mobile" class="side-nav">
 				<li>
-					<a href="#">Navbar Link</a>
+					<a href="dashboard.html">Dashboard</a>
+				</li>
+				<li>
+					<a href="#">Demos</a>
+				</li>
+				<li>
+					<a href="#">MyFitnessPal</a>
 				</li>
 			</ul>
 			<a href="#" data-activates="nav-mobile" class="button-collapse">
@@ -142,7 +158,6 @@
 		</div>
 	</div>
 
-
 	<div class="parallax-container valign-wrapper">
 		<div class="section no-pad-bot">
 			<div class="container">
@@ -163,9 +178,11 @@
 					<h5 class="white-text">Company Bio</h5>
 					<p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support
 						and continue development on this project and is greatly appreciated.</p>
-
-
 				</div>
+
+				<div class="dashboardData">
+				</div>
+
 				<div class="col l3 s12">
 					<h5 class="white-text">Settings</h5>
 					<ul>
@@ -209,17 +226,19 @@
 			</div>
 		</div>
 	</footer>
-	
+
 
 	<!-- jQuery CDN -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Compiled and minified JavaScript for Materialize -->
-		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
-	<!-- javascript files -->
-	<script src="assets/js/app.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
+	<!-- firebase -->
+	<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+	<!-- javascript -->
 	<script src="assets/js/init.js"></script>
 	<script src="assets/js/materialize.js"></script>
-	
+	<script src="assets/js/app.js"></script>
+
 
 
 </body>
