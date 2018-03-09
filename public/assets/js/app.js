@@ -14,6 +14,7 @@ var database = firebase.database();
 var firstName;
 var lastName;
 var dateOfBirth;
+var email;
 var userName;
 var password;
 
@@ -21,6 +22,7 @@ function clearField() {
   $("#first_name").val("");
   $("#last_name").val("");
   $("#date_of_birth").val("");
+  $("#email").val("");
   $("#username").val("");
   $("#password").val("");
 }
@@ -36,6 +38,9 @@ $("#submit").on("click", function(event) {
   dateOfBirth = $("#date_of_birth")
     .val()
     .trim();
+  email = $("#email")
+    .val()
+    .trim();  
   userName = $("#username")
     .val()
     .trim();
@@ -47,6 +52,7 @@ $("#submit").on("click", function(event) {
     firstname: firstName,
     lastName: lastName,
     dateOfBirth: dateOfBirth,
+    email: email,
     userName: userName,
     password: password
   };
