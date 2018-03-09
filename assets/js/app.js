@@ -1,3 +1,15 @@
+
+var config = {
+	apiKey: "AIzaSyBYfKRi1L1Bx3HjDzdPSzm22XIOssPbh-Y",
+	authDomain: "code-red-bootcamp.firebaseapp.com",
+	databaseURL: "https://code-red-bootcamp.firebaseio.com",
+	projectId: "code-red-bootcamp",
+	storageBucket: "code-red-bootcamp.appspot.com",
+	messagingSenderId: "926767366245"
+};
+firebase.initializeApp(config);
+var database = firebase.database();
+
 var questions = [{
 	question: "Describe your current level of activity.",
 	choices: ["Always on the go!", "I'm active, but I do love my couch!", "Room for improvment."],
@@ -20,7 +32,7 @@ var wgerURL = "https://wger.de/api/v2/workout/ \
 $(document).ready(function () {
 
 
-	
+
 	// Displaying questions on the question page.
 	function displayCurrentQuestion() {
 
@@ -29,33 +41,40 @@ $(document).ready(function () {
 		var questionClass = $(document).find(".quizContainer > .question");
 		var choiceList = $(document).find(".quizContainer > .choiceList");
 		var numChoices = questions[currentQuestion].choices.length;
-	
+
 		// Set the questionClass text to the current question
 		$('.question').text(question);
-	
+
 		// Remove all current <li> elements (if any)
 		$('.choiceList').find("li").remove();
-	
+
 		var choice;
 		for (i = 0; i < numChoices; i++) {
 			choice = questions[currentQuestion].choices[i];
 			$('<li><input type="radio" value=' + i + ' name="dynradio" />' + choice + '</li>').appendTo('.choiceList');
 		}
 	}
-	
-displayCurrentQuestion();
-$(this).find('nextButton').on('click', function(){
-	if (!quizOver) {
-		value = $("input[type='radio']:checked").val();
-				console.log('value: ', value);
-				currentQuestion++; // Since we have already displayed the first question on DOM ready
-				if (currentQuestion < questions.length) {
-					displayCurrentQuestion();
-				}
-	}else{
-		$(document).find(".nextButton").text("Show results");
-		quizOver = true;
-		// quiz over send user to dashboard
-	}
-})
+
+	displayCurrentQuestion();
+	$(this).find('nextButton').on('click', function () {
+		if (!quizOver) {
+			value = $("input[type='radio']:checked").val();
+			console.log('value: ', value);
+			currentQuestion++; // Since we have already displayed the first question on DOM ready
+			if (currentQuestion < questions.length) {
+				displayCurrentQuestion();
+			}
+		} else {
+			$(document).find(".nextButton").text("Show results");
+			quizOver = true;
+			// quiz over send user to dashboard
+		}
+	})
+
+	$.ajax({
+		method: "GET",
+		url: "assets/json/loseWeight.json"
+	}).then(function (response) {
+		console.log(response);
+	});
 });
