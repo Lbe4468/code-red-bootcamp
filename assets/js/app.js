@@ -13,7 +13,6 @@ var questions = [{
 }];
 
 var currentQuestion = 0;
-var totalQuestions = 0;
 var quizOver = false;
 var wgerURL = "https://wger.de/api/v2/workout/ \
 -H 'Authorization: Token fbb1fbba723e77e657f5c9c5db95bdae8444e136'"
@@ -49,6 +48,14 @@ $(this).find('nextButton').on('click', function(){
 	if (!quizOver) {
 		value = $("input[type='radio']:checked").val();
 				console.log('value: ', value);
+				currentQuestion++; // Since we have already displayed the first question on DOM ready
+				if (currentQuestion < questions.length) {
+					displayCurrentQuestion();
+				}
+	}else{
+		$(document).find(".nextButton").text("Show results");
+		quizOver = true;
+		// quiz over send user to dashboard
 	}
 })
 });
