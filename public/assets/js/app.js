@@ -25,34 +25,29 @@ function clearField() {
   $("#password").val("");
 }
 
-$("#submit").on("click", function(event) {
+$("#submitbutton").on("click", function(event) {
   event.preventDefault();
-  firstName = $("#first_name")
-    .val()
-    .trim();
-  lastName = $("#last_name")
-    .val()
-    .trim();
-  dateOfBirth = $("#date_of_birth")
-    .val()
-    .trim();
-  userName = $("#username")
-    .val()
-    .trim();
-  password = $("#password")
-    .val()
-    .trim();
+  firstName = $("#first_name").val().trim();
+  lastName = $("#last_name").val().trim();
+  dateOfBirth = $("#date_of_birth").val().trim();
+  userName = $("#username").val().trim();
+  password = $("#password").val().trim();
 
   var newMember = {
-    firstname: firstName,
-    lastName: lastName,
-    dateOfBirth: dateOfBirth,
-    userName: userName,
-    password: password
+    firstName:firstName,
+    lastName:lastName,
+    dateOfBirth:dateOfBirth,
+    userName:userName,
+    password: assword
   };
   database.ref().push(newMember);
   console.log(newMember);
   clearField();
+});
+
+database.ref().on('child_added', function(snapShot){
+	var data = snapshot.val();
+	var userName = $('<td>').text(data.userName);
 });
 
 var questions = [
