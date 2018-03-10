@@ -25,8 +25,10 @@ function clearField() {
   $("#username").val("");
   $("#password").val("");
 }
-// submit button on click sent to database..
-$("#submitbutton").on("click", function(event) {
+
+$("#submit2").on("click", function(event) {
+
+
   event.preventDefault();
   firstName = $("#first_name")
     .val()
