@@ -27,7 +27,7 @@ function clearField() {
   $("#password").val("");
 }
 
-$("#submit").on("click", function(event) {
+$("#submit2").on("click", function(event) {
   event.preventDefault();
   firstName = $("#first_name")
     .val()
@@ -49,7 +49,7 @@ $("#submit").on("click", function(event) {
     .trim();
 
   var newMember = {
-    firstname: firstName,
+    firstName: firstName,
     lastName: lastName,
     dateOfBirth: dateOfBirth,
     email: email,
