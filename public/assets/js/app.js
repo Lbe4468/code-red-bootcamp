@@ -42,8 +42,8 @@ $("#submitbutton").on("click", function(event) {
     lastName:lastName,
     dateOfBirth:dateOfBirth,
     userName:userName,
-    password: assword
-
+    password: password
+	}
   database.ref().push(newMember);
   console.log(newMember);
   clearField();
