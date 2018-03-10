@@ -1,3 +1,4 @@
+// api key...
 var config = {
   apiKey: "AIzaSyBYfKRi1L1Bx3HjDzdPSzm22XIOssPbh-Y",
   authDomain: "code-red-bootcamp.firebaseapp.com",
@@ -6,7 +7,7 @@ var config = {
   storageBucket: "code-red-bootcamp.appspot.com",
   messagingSenderId: "926767366245"
 };
-
+// initialize firebase...
 firebase.initializeApp(config);
 
 var database = firebase.database();
@@ -16,7 +17,7 @@ var lastName;
 var dateOfBirth;
 var userName;
 var password;
-
+//clear index fields 
 function clearField() {
   $("#first_name").val("");
   $("#last_name").val("");
@@ -24,7 +25,7 @@ function clearField() {
   $("#username").val("");
   $("#password").val("");
 }
-
+// submit button on click sent to database..
 $("#submitbutton").on("click", function(event) {
   event.preventDefault();
   firstName = $("#first_name").val().trim();
@@ -44,39 +45,54 @@ $("#submitbutton").on("click", function(event) {
   console.log(newMember);
   clearField();
 });
-
+//get info onto dashboard//
 database.ref().on('child_added', function(snapShot){
-	var data = snapshot.val();
+	var data = snapShot.val();
 	var userName = $('<td>').text(data.userName);
+	
 });
 
 var questions = [
   {
     question: "Describe your current level of activity.",
     choices: [
-      "Always on the go!",
-      "I'm active, but I do love my couch!",
-      "Room for improvment."
-    ]
+      '<p><input name="group1" class="group1" value="0" question="questionOne" type="radio" id="test1" /><label for="test1">Always on the go!</label></p>',
+      '<p><input name="group1" class="group1" value="1" question="questionOne" type="radio" id="test2" /><label for="test2">I\'m active, but I do love my couch!</label></p>',
+      '<p><input name="group1" class="group1" value="2" question="questionOne"type="radio" id="test3" /><label for="test3">Room for improvment</label></p>'
+		]
   },
   {
     question: "How many days a week do you hit the gym?",
-    choices: ["0-1", "2-4", "5-7"]
+		choices: [
+			'<p><input name="group1" class="group1" value="0" question="questionOne" type="radio" id="test1" /><label for="test1">0-1</label></p>',
+      '<p><input name="group1" class="group1" value="1" question="questionOne" type="radio" id="test2" /><label for="test2">2-4</label></p>',
+      '<p><input name="group1" class="group1" value="2" question="questionOne"type="radio" id="test3" /><label for="test3">5-7</label></p>'
+			]
   },
   {
     question: "What results do you want to acheive?",
     choices: [
-      "I like where I'm at, I just want to keep it that way!",
-      "I want to be the Incredible Hulk",
-      "I need to get my beach body back!"
-    ]
+			'<p><input name="group1" class="group1" value="0" question="questionOne" type="radio" id="test1" /><label for="test1">I like where I\'m at, I just want to keep it that way!</label></p>',
+      '<p><input name="group1" class="group1" value="1" question="questionOne" type="radio" id="test2" /><label for="test2">I want to be the Incredible Hulk</label></p>',
+      '<p><input name="group1" class="group1" value="2" question="questionOne"type="radio" id="test3" /><label for="test3">I need to get my beach body back!</label></p>'
+		]
+
   },
   {
     question: "How many days a week are you committing to achieve your goal?",
-    choice: ["2-3", "3-4", "5-6"]
+		choice: [
+			'<p><input name="group1" class="group1" value="0" question="questionOne" type="radio" id="test1" /><label for="test1">2-3</label></p>',
+      '<p><input name="group1" class="group1" value="1" question="questionOne" type="radio" id="test2" /><label for="test2">3-4</label></p>',
+      '<p><input name="group1" class="group1" value="2" question="questionOne"type="radio" id="test3" /><label for="test3">5-6</label></p>'
+	]
   }
 ];
-
+var memberAnswers = {
+	questionOne: undefined,
+	questionTwo: undefined,
+	questionThree: undefined,
+	questionFour: undefined,
+};
 var currentQuestion = 0;
 var quizOver = false;
 var wgerURL =
@@ -88,55 +104,57 @@ $(document).ready(function() {
   function displayCurrentQuestion() {
     var question = questions[currentQuestion].question;
     var questionClass = $(document).find(".quizContainer > .question");
-    var choiceList = $(document).find(".quizContainer > .choiceList");
+    var choiceList = $(document).find(".quizContainer > .group1");
     var numChoices = questions[currentQuestion].choices.length;
 
     // Set the questionClass text to the current question
     $(".question").text(question);
 
     // Remove all current <li> elements (if any)
-    $(".choiceList")
+    $(".group1")
       .find("li")
       .remove();
 
     var choice;
     for (i = 0; i < numChoices; i++) {
       choice = questions[currentQuestion].choices[i];
-      $(
-        '<li><input type="radio" value=' +
-          i +
-          ' name="dynradio" />' +
-          choice +
-          "</li>"
-      ).appendTo(".choiceList");
+      $(choice).appendTo(".question");
+			console.log(choice);
     }
-  }
-
+	}
+	
+///display questions
   displayCurrentQuestion();
-  $(this)
-    .find("nextButton")
-    .on("click", function() {
-      if (!quizOver) {
-        value = $("input[type='radio']:checked").val();
-        console.log("value: ", value);
+  $(document).on("click", "#nextButton", function(e) {
+		e.preventDefault();
+		if (currentQuestion > questions.length)  {
+				value = $("input[type='radio']:checked").val();
+				var question = $("input[type='radio']:checked").attr("question")
+				console.log("value: ", value);
+				console.log(question);
+				memberAnswers[question]=parseInt(value);
+				 console.log(memberAnswers);
         currentQuestion++; // Since we have already displayed the first question on DOM ready
         if (currentQuestion < questions.length) {
           displayCurrentQuestion();
         }
       } else {
         $(document)
-          .find(".nextButton")
-          .text("Show results");
+          .find(".nextButton");
         quizOver = true;
         // quiz over send user to dashboard
-      }
-    });
+			}
+		});
+		
 });
-
+// $('#textarea1').val('New Text');
+// $('#textarea1').trigger('autoresize'); demos page jquery text line
 //
-$.ajax({
-  method: "GET",
-  url: "assets/json/loseWeight.json"
-}).then(function(response) {
-  console.log(response);
-});
+
+// //ajax call for workouts 
+// $.ajax({
+//   method: "GET",
+//   url: "assets/json/loseWeight.json"
+// }).then(function(response) {
+//   console.log(response);
+// });
