@@ -9,16 +9,16 @@ var config = {
 };
 // initialize firebase...
 firebase.initializeApp(config);
-
 var database = firebase.database();
-
 var firstName;
 var lastName;
 var dateOfBirth;
 var email;
 var userName;
 var password;
-//clear index fields 
+
+//clear index fields
+
 function clearField() {
   $("#first_name").val("");
   $("#last_name").val("");
@@ -27,34 +27,48 @@ function clearField() {
   $("#username").val("");
   $("#password").val("");
 }
-// submit button on click sent to database..
-$("#submitbutton").on("click", function(event) {
+
+
+$("#submit2").on("click", function(event) {
+
+
   event.preventDefault();
-
-  firstName = $("#first_name").val().trim();
-  lastName = $("#last_name").val().trim();
-  dateOfBirth = $("#date_of_birth").val().trim();
-  userName = $("#username").val().trim();
-  password = $("#password").val().trim();
-
+  firstName = $("#first_name")
+    .val()
+    .trim();
+  lastName = $("#last_name")
+    .val()
+    .trim();
+  dateOfBirth = $("#date_of_birth")
+    .val()
+    .trim();
+  email = $("#email")
+    .val()
+    .trim();  
+  userName = $("#username")
+    .val()
+    .trim();
+  password = $("#password")
+    .val()
+    .trim();
   var newMember = {
-    firstName:firstName,
-    lastName:lastName,
-    dateOfBirth:dateOfBirth,
-    userName:userName,
+    firstName: firstName,
+    lastName: lastName,
+    dateOfBirth: dateOfBirth,
+    email: email,
+    userName: userName,
     password: assword
-
+  };
   database.ref().push(newMember);
   console.log(newMember);
   clearField();
 });
 //get info onto dashboard//
-database.ref().on('child_added', function(snapShot){
-	var data = snapShot.val();
-	var userName = $('<td>').text(data.userName);
-	
-});
 
+database.ref().on("child_added", function(snapShot) {
+  var data = snapShot.val();
+  var userName = $("<td>").text(data.userName);
+});
 var questions = [
   {
     question: "Describe your current level of activity.",
@@ -96,6 +110,7 @@ var memberAnswers = {
 	questionThree: undefined,
 	questionFour: undefined,
 };
+
 var currentQuestion = 0;
 var quizOver = false;
 var wgerURL =
@@ -109,24 +124,25 @@ $(document).ready(function() {
     var questionClass = $(document).find(".quizContainer > .question");
     var choiceList = $(document).find(".quizContainer > .group1");
     var numChoices = questions[currentQuestion].choices.length;
-
     // Set the questionClass text to the current question
     $(".question").text(question);
-
     // Remove all current <li> elements (if any)
     $(".group1")
       .find("li")
       .remove();
-
     var choice;
     for (i = 0; i < numChoices; i++) {
       choice = questions[currentQuestion].choices[i];
       $(choice).appendTo(".question");
 			console.log(choice);
     }
+
 	}
 	
 ///display questions
+
+  }
+
   displayCurrentQuestion();
   $(document).on("click", "#nextButton", function(e) {
 		e.preventDefault();
@@ -150,14 +166,28 @@ $(document).ready(function() {
 		});
 		
 });
-// $('#textarea1').val('New Text');
-// $('#textarea1').trigger('autoresize'); demos page jquery text line
-//
 
-// //ajax call for workouts 
-// $.ajax({
-//   method: "GET",
-//   url: "assets/json/loseWeight.json"
-// }).then(function(response) {
-//   console.log(response);
-// });
+//
+var $workoutsLoseWeight = $("#workoutsLoseWeight");
+
+$.ajax({
+  method: "GET",
+  url: "assets/json/loseWeight.json",
+  success: function(data) {
+    var results = data;
+    console.log(data);
+    for (var i = 0; i < results.length; i++) {
+      var workoutName = results[i].name;
+			var paraName = $("<h3 class='para-workout'>").text(workoutName);
+			var groups = results[i].muscleGroups;
+      var paraMuscleGroups = $("<h4 class='para-muscleGroups'>").text(groups);
+      var workoutInstructions = results[i].instructions;
+      var paraWorkoutInstructions = $("<p>").text(workoutInstructions);
+      $workoutsLoseWeight
+        .append(paraName)
+        .append(paraMuscleGroups)
+        .append(paraWorkoutInstructions);
+    }
+  }
+});
+
