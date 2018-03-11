@@ -46,7 +46,7 @@ $("#submitbutton").on("click", function(event) {
     lastName: lastName,
     dateOfBirth: dateOfBirth,
     userName: userName,
-    password: assword
+    password: password
   };
   database.ref().push(newMember);
   console.log(newMember);
@@ -135,8 +135,9 @@ $(document).ready(function() {
     });
 });
 //
-var $workoutsLoseWeight = $("#workoutsLoseWeight");
 
+// PULLING WORKOUT DATA FROM JSON TO DISPLAY ON USER DASHBOARD
+var $workoutsLoseWeight = $("#workoutsLoseWeight");
 $.ajax({
   method: "GET",
   url: "assets/json/loseWeight.json",
@@ -145,8 +146,8 @@ $.ajax({
     console.log(data);
     for (var i = 0; i < results.length; i++) {
       var workoutName = results[i].name;
-			var paraName = $("<h3 class='para-workout'>").text(workoutName);
-			var groups = results[i].muscleGroups;
+      var paraName = $("<h3 class='para-workout'>").text(workoutName);
+      var groups = results[i].muscleGroups;
       var paraMuscleGroups = $("<h4 class='para-muscleGroups'>").text(groups);
       var workoutInstructions = results[i].instructions;
       var paraWorkoutInstructions = $("<p>").text(workoutInstructions);
@@ -156,4 +157,58 @@ $.ajax({
         .append(paraWorkoutInstructions);
     }
   }
+});
+
+// PULLING FIREBASE USER DATA TO DISPLAY IN DASHBOARD - VERSION 1
+// var userDataRef = firebase
+//   .database()
+//   .ref()
+//   .orderByKey();
+// userDataRef.once("value").then(function(snapshot) {
+//   snapshot.forEach(function(childSnapshot) {
+//     var key = childSnapshot.key;
+// 		var childData = childSnapshot.val();
+// 		console.log(childData);
+// 		var name_val = childSnapshot.val().firstName;
+//     var id_val = childSnapshot.val().userName;
+//     $("#userInfo").append("<li>" + name_val);
+//   });
+// });
+
+// PULLING FIREBASE USER DATA TO DISPLAY IN DASHBOARD - VERSION 2
+database.ref().on("value", function(snapshot) {
+  // console.log(snapshot.val());
+  snapshot.forEach(function(childSnapshot) {
+    // console.log(childSnapshot);
+    var childData = childSnapshot.val();
+    // console.log(childData);
+    var username = childSnapshot.val().userName;
+    console.log(username);
+    $("#displayUserName").append(username);
+  });
+});
+
+// Event to trigger file select to upload profile picture to firebase
+$("#profile-image").on("click", function() {
+	// event to activate/show image file selection/upload
+	$("#file-input").trigger("click");
+	// Upon file being selected...
+  $("input:file").change(function(e) {
+    var file = e.target.files[0];
+    // Get current username from Firebase
+    var user = firebase.auth().currentUser;
+    // Create a Storage Ref w/ username
+    var storageRef = firebase
+      .storage()
+      .ref(user + "/profilePicture/" + file.name);
+    // Upload file to Firebase 
+    var task = storageRef.put(file);
+    var name = file.name;
+    var size = file.size;
+    var type = file.type;
+    console.log(file);
+    console.log(name);
+    console.log(size);
+    console.log(type);
+  });
 });
