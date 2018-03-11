@@ -53,8 +53,6 @@ var email;
 var userName;
 var password;
 
-
-
 // when the document loads...
 $(document).ready(function () {
 
@@ -79,6 +77,7 @@ const auth = firebase.auth();
 const promise = auth.signInWithEmailAndPassword(email, password);
 //if not user will console log error
 promise.catch(e => console.log(e.message));
+
 });
 //add signup event
 //when sign up button is clicked this event function happens
@@ -108,6 +107,7 @@ auth.onAuthStateChanged(firebaseUser => {
 		console.log('Not logged in');
 	}
 });
+
 	//end authentication info.......
 
 	//clear index fields
@@ -227,4 +227,59 @@ auth.onAuthStateChanged(firebaseUser => {
 			}
 		}
 	});
+
+});
+
+// PULLING FIREBASE USER DATA TO DISPLAY IN DASHBOARD - VERSION 1
+// var userDataRef = firebase
+//   .database()
+//   .ref()
+//   .orderByKey();
+// userDataRef.once("value").then(function(snapshot) {
+//   snapshot.forEach(function(childSnapshot) {
+//     var key = childSnapshot.key;
+// 		var childData = childSnapshot.val();
+// 		console.log(childData);
+// 		var name_val = childSnapshot.val().firstName;
+//     var id_val = childSnapshot.val().userName;
+//     $("#userInfo").append("<li>" + name_val);
+//   });
+// });
+
+// PULLING FIREBASE USER DATA TO DISPLAY IN DASHBOARD - VERSION 2
+database.ref().on("value", function(snapshot) {
+  // console.log(snapshot.val());
+  snapshot.forEach(function(childSnapshot) {
+    // console.log(childSnapshot);
+    var childData = childSnapshot.val();
+    // console.log(childData);
+    var username = childSnapshot.val().userName;
+    console.log(username);
+    $("#displayUserName").append(username);
+  });
+});
+
+// Event to trigger file select to upload profile picture to firebase
+$("#profile-image").on("click", function() {
+	// event to activate/show image file selection/upload
+	$("#file-input").trigger("click");
+	// Upon file being selected...
+  $("input:file").change(function(e) {
+    var file = e.target.files[0];
+    // Get current username from Firebase
+    var user = firebase.auth().currentUser;
+    // Create a Storage Ref w/ username
+    var storageRef = firebase
+      .storage()
+      .ref(user + "/profilePicture/" + file.name);
+    // Upload file to Firebase 
+    var task = storageRef.put(file);
+    var name = file.name;
+    var size = file.size;
+    var type = file.type;
+    console.log(file);
+    console.log(name);
+    console.log(size);
+    console.log(type);
+  });
 });
