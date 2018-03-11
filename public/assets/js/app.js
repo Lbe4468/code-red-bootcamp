@@ -1,162 +1,233 @@
-// api key...
-var config = {
-  apiKey: "AIzaSyBYfKRi1L1Bx3HjDzdPSzm22XIOssPbh-Y",
-  authDomain: "code-red-bootcamp.firebaseapp.com",
-  databaseURL: "https://code-red-bootcamp.firebaseio.com",
-  projectId: "code-red-bootcamp",
-  storageBucket: "code-red-bootcamp.appspot.com",
-  messagingSenderId: "926767366245"
-};
-// initialize firebase...
-firebase.initializeApp(config);
+	// api key...
+	var config = {
+		apiKey: "AIzaSyBYfKRi1L1Bx3HjDzdPSzm22XIOssPbh-Y",
+		authDomain: "code-red-bootcamp.firebaseapp.com",
+		databaseURL: "https://code-red-bootcamp.firebaseio.com",
+		projectId: "code-red-bootcamp",
+		storageBucket: "code-red-bootcamp.appspot.com",
+		messagingSenderId: "926767366245"
+	};
+
+	var questions = [
+		{
+			question: "How many days a week do you hit the gym?",
+			choices: [
+				'<p><input name="group1" class="group1" value="0" question="questionOne" type="radio" id="test1" /><label for="test1">0-1</label></p>',
+				'<p><input name="group1" class="group1" value="1" question="questionOne" type="radio" id="test2" /><label for="test2">2-4</label></p>',
+				'<p><input name="group1" class="group1" value="2" question="questionOne"type="radio" id="test3" /><label for="test3">5-7</label></p>'
+			]
+		},
+		{
+			question: "What results do you want to acheive?",
+			choices: [
+				'<p><input name="group1" class="group1" value="0" question="questionTwo" type="radio" id="test1" /><label for="test1">I like where I\'m at, I just want to keep it that way!</label></p>',
+				'<p><input name="group1" class="group1" value="1" question="questionTwo" type="radio" id="test2" /><label for="test2">I want to be the Incredible Hulk</label></p>',
+				'<p><input name="group1" class="group1" value="2" question="questionTwo"type="radio" id="test3" /><label for="test3">I need to get my beach body back!</label></p>'
+			]
+
+		},
+		{
+			question: "How many days a week are you committing to achieve your goal?",
+			choices: [
+				'<p><input name="group1" class="group1" value="0" question="questionThree" type="radio" id="test1" /><label for="test1">2-3</label></p>',
+				'<p><input name="group1" class="group1" value="1" question="questionThree" type="radio" id="test2" /><label for="test2">3-4</label></p>',
+				'<p><input name="group1" class="group1" value="2" question="questionThree"type="radio" id="test3" /><label for="test3">5-6</label></p>'
+			]
+		},
+		{
+			question: "Describe your current level of activity.",
+			choices: [
+				'<p><input name="group1" class="group1" value="0" question="questionFour" type="radio" id="test1" /><label for="test1">Always on the go!</label></p>',
+				'<p><input name="group1" class="group1" value="1" question="questionFour" type="radio" id="test2" /><label for="test2">I\'m active, but I do love my couch!</label></p>',
+				'<p><input name="group1" class="group1" value="2" question="questionFour"type="radio" id="test3" /><label for="test3">Room for improvment</label></p>'
+			]
+		},
+	];
+
+//variables for database reference.....
 var database = firebase.database();
 var firstName;
 var lastName;
 var dateOfBirth;
+var email;
 var userName;
 var password;
-//clear index fields
-function clearField() {
-  $("#first_name").val("");
-  $("#last_name").val("");
-  $("#date_of_birth").val("");
-  $("#username").val("");
-  $("#password").val("");
-}
-// submit button on click sent to database..
-$("#submitbutton").on("click", function(event) {
-  event.preventDefault();
-  firstName = $("#first_name")
-    .val()
-    .trim();
-  lastName = $("#last_name")
-    .val()
-    .trim();
-  dateOfBirth = $("#date_of_birth")
-    .val()
-    .trim();
-  userName = $("#username")
-    .val()
-    .trim();
-  password = $("#password")
-    .val()
-    .trim();
-  var newMember = {
-    firstName: firstName,
-    lastName: lastName,
-    dateOfBirth: dateOfBirth,
-    userName: userName,
-    password: password
-  };
-  database.ref().push(newMember);
-  console.log(newMember);
-  clearField();
-});
-//get info onto dashboard//
-database.ref().on("child_added", function(snapShot) {
-  var data = snapShot.val();
-  var userName = $("<td>").text(data.userName);
-});
-var questions = [
-  {
-    question: "Describe your current level of activity.",
-    choices: [
-      "Always on the go!",
-      "I'm active, but I do love my couch!",
-      "Room for improvment."
-    ]
-  },
-  {
-    question: "How many days a week do you hit the gym?",
-    choices: ["0-1", "2-4", "5-7"]
-  },
-  {
-    question: "What results do you want to acheive?",
-    choices: [
-      "I like where I'm at, I just want to keep it that way!",
-      "I want to be the Incredible Hulk",
-      "I need to get my beach body back!"
-    ]
-  },
-  {
-    question: "How many days a week are you committing to achieve your goal?",
-    choice: ["2-3", "3-4", "5-6"]
-  }
-];
-var currentQuestion = 0;
-var quizOver = false;
-var wgerURL =
-  "https://wger.de/api/v2/workout/ \
--H 'Authorization: Token fbb1fbba723e77e657f5c9c5db95bdae8444e136'";
-// when the document loads...
-$(document).ready(function() {
-  // Displaying questions on the question page.
-  function displayCurrentQuestion() {
-    var question = questions[currentQuestion].question;
-    var questionClass = $(document).find(".quizContainer > .question");
-    var choiceList = $(document).find(".quizContainer > .choiceList");
-    var numChoices = questions[currentQuestion].choices.length;
-    // Set the questionClass text to the current question
-    $(".question").text(question);
-    // Remove all current <li> elements (if any)
-    $(".choiceList")
-      .find("li")
-      .remove();
-    var choice;
-    for (i = 0; i < numChoices; i++) {
-      choice = questions[currentQuestion].choices[i];
-      $(
-        '<li><input type="radio" value=' +
-          i +
-          ' name="dynradio" />' +
-          choice +
-          "</li>"
-      ).appendTo(".choiceList");
-    }
-  }
-  displayCurrentQuestion();
-  $(this)
-    .find("nextButton")
-    .on("click", function() {
-      if (!quizOver) {
-        value = $("input[type='radio']:checked").val();
-        console.log("value: ", value);
-        currentQuestion++; // Since we have already displayed the first question on DOM ready
-        if (currentQuestion < questions.length) {
-          displayCurrentQuestion();
-        }
-      } else {
-        $(document)
-          .find(".nextButton")
-          .text("Show results");
-        quizOver = true;
-        // quiz over send user to dashboard
-      }
-    });
-});
-//
 
-// PULLING WORKOUT DATA FROM JSON TO DISPLAY ON USER DASHBOARD
-var $workoutsLoseWeight = $("#workoutsLoseWeight");
-$.ajax({
-  method: "GET",
-  url: "assets/json/loseWeight.json",
-  success: function(data) {
-    var results = data;
-    console.log(data);
-    for (var i = 0; i < results.length; i++) {
-      var workoutName = results[i].name;
-      var paraName = $("<h3 class='para-workout'>").text(workoutName);
-      var groups = results[i].muscleGroups;
-      var paraMuscleGroups = $("<h4 class='para-muscleGroups'>").text(groups);
-      var workoutInstructions = results[i].instructions;
-      var paraWorkoutInstructions = $("<p>").text(workoutInstructions);
-      $workoutsLoseWeight
-        .append(paraName)
-        .append(paraMuscleGroups)
-        .append(paraWorkoutInstructions);
-    }
-  }
+// when the document loads...
+$(document).ready(function () {
+
+	// initialize firebase..
+	firebase.initializeApp(config);
+
+
+	// //password username authentication ect.
+const email = document.getElementById ("email");
+const password = document.getElementById("password");
+const signUp = document.getElementById("quickstart-sign-up");
+const login = document.getElementById("quickstart-sign-in")
+const logout = document.getElementById("quickstart-log-out")
+//when sign in button is clicked this event function happens
+$("#quickstart-sign-in").on("click", e =>{
+	//get email and password from user
+const email = txtEmail.value;
+const password = txtPassword.value;
+//authenticate from firebase
+const auth = firebase.auth();
+//if user will log in
+const promise = auth.signInWithEmailAndPassword(email, password);
+//if not user will console log error
+promise.catch(e => console.log(e.message));
+
+});
+//add signup event
+//when sign up button is clicked this event function happens
+$("#quickstart-sign-up").on("click", e =>{
+	//get email and password from user
+	//TODO: Check for real emails
+const email = txtEmail.value;
+const password = txtPassword.value;
+//authenticate from firebase
+const auth = firebase.auth();
+//create user and log in
+const promise = auth.creatUserWithEmailAndPassword(email, password);
+// will console log error
+promise.catch(e => console.log(e.message));
+});
+//add authentication listener
+firebase.auth.onAuthStateChanged(firebaseUser => {});
+//logout
+$("#quickstart-log-out").on("click", e=> {
+	firebase.auth().signOut();
+});
+//if the state of login is changed console log either user or not loggid in
+auth.onAuthStateChanged(firebaseUser => {
+	if(firebaseUser){
+		console.log(firebaseUser);
+	}else{
+		console.log('Not logged in');
+	}
+});
+
+	//end authentication info.......
+
+	//clear index fields
+
+	function clearField() {
+		$("#first_name").val("");
+		$("#last_name").val("");
+		$("#date_of_birth").val("");
+		$("#email").val("");
+		$("#username").val("");
+		$("#password").val("");
+	}
+
+	//ebent listener for question page info submitted
+	$("#submit2").on("click", function (event) {
+
+
+		event.preventDefault();
+		firstName = $("#first_name").val().trim();
+		lastName = $("#last_name").val().trim();
+		dateOfBirth = $("#date_of_birth").val().trim();
+		userName = $("#username").val().trim();
+
+		var newMember = {
+			firstName: firstName,
+			lastName: lastName,
+			dateOfBirth: dateOfBirth,
+			userName: userName,
+			password: password
+		}
+		database.ref().push(newMember);
+		console.log(newMember);
+		clearField();
+	});
+
+
+	//get info onto dashboard//
+	database.ref().on("child_added", function (snapShot) {
+		var data = snapShot.val();
+		var userName = $("<td>").text(data.userName);
+	});
+
+
+
+	//creating variables for call to JSON 
+	var memberAnswers = {
+		questionOne: undefined,
+		questionTwo: undefined,
+		questionThree: undefined,
+	};
+
+	var currentQuestion = 0;
+	var quizOver = false;
+	var wgerURL = "https://wger.de/api/v2/workout/ \-H 'Authorization: Token fbb1fbba723e77e657f5c9c5db95bdae8444e136'";
+
+	// Displaying questions on the question page.
+	function displayCurrentQuestion() {
+		var question = questions[currentQuestion].question;
+		var questionClass = $(document).find(".quizContainer > .question");
+		var choiceList = $(document).find(".quizContainer > .group1");
+		var numChoices = questions[currentQuestion].choices.length;
+		// Set the questionClass text to the current question
+		$(".question").text(question);
+		// Remove all current <li> elements (if any)
+		$(".group1")
+			.find("li")
+			.remove();
+		var choice;
+		for (i = 0; i < numChoices; i++) {
+			choice = questions[currentQuestion].choices[i];
+			$(choice).appendTo(".question");
+		}
+	};
+
+	///display questions on page
+
+	displayCurrentQuestion();
+	$(document).on("click", "#nextButton", function (e) {
+		e.preventDefault();
+		if (currentQuestion < questions.length - 1) {
+			value = $("input[type='radio']:checked").val();
+			var question = $("input[type='radio']:checked").attr("question")
+			memberAnswers[question] = parseInt(value);
+			currentQuestion++; // Since we have already displayed the first question on DOM ready
+			displayCurrentQuestion();
+			if (currentQuestion == questions.length - 1) {
+				$(document)
+					.find("#nextButton").text("Submit");
+			}
+		} else {
+			quizOver = true;
+			console.log(memberAnswers);
+			// quiz over send user to dashboard
+		}
+	});
+
+	// ajax call to pull workouts to page....
+	var $workoutsLoseWeight = $("#workoutsLoseWeight");
+
+	$.ajax({
+		method: "GET",
+		url: "assets/json/loseWeight.json",
+		success: function (data) {
+			var results = data;
+			console.log(data);
+			for (var i = 0; i < results.length; i++) {
+				var workoutName = results[i].name;
+				var paraName = $("<h3 class='para-workout'>").text(workoutName);
+				var groups = results[i].muscleGroups;
+				var paraMuscleGroups = $("<h4 class='para-muscleGroups'>").text(groups);
+				var workoutInstructions = results[i].instructions;
+				var paraWorkoutInstructions = $("<p>").text(workoutInstructions);
+				$workoutsLoseWeight
+					.append(paraName)
+					.append(paraMuscleGroups)
+					.append(paraWorkoutInstructions);
+			}
+		}
+	});
+
 });
 
 // PULLING FIREBASE USER DATA TO DISPLAY IN DASHBOARD - VERSION 1
