@@ -57,18 +57,11 @@
 	<div id="index-banner" class="parallax-container">
 		<div class="section no-pad-bot">
 			<div class="container">
-				<br>
-				<br>
-				<h1 class="header center red-text text-darken-2">READY TO GO HARD?</h1>
+				<h1 class="header center red-text text-darken-2" id="dashboardHeader">READY TO GO HARD?</h1>
 				<div class="row center">
-					<h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
 				</div>
 				<div class="row center">
-					<!-- <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light red darken-1">Workouts</a> -->
 				</div>
-				<br>
-				<br>
-
 			</div>
 		</div>
 		<div class="parallax">
@@ -123,14 +116,24 @@
 		</div>
 	</div> -->
 			<div class="row" id="user-profile">
-
+				<div class="row" id="userPic">
+					<img class="responsive-img" src="assets/images/pic-placeholder.png" id="profile-image"></img><br>
+					<p id="clickToUpdate">Click Image to Update Avatar</p>
+					<input id="file-input" type="file" value="upload" style="display: none;" />
+				</div>
+				<div class="row">
+					<ul id="userInfo">
+						<li id="displayUserName"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
 			</div>
 
 			<div class="parallax-container valign-wrapper">
 				<div class="section no-pad-bot">
 					<div class="container">
 						<div class="row center">
-							<h5 class="header col s12 light red-text">A modern responsive front-end framework based on Material Design</h5>
 						</div>
 					</div>
 				</div>
@@ -139,35 +142,21 @@
 				</div>
 			</div>
 
-			<div class="container">
-				<div class="row">
-
-					<!-- <div class="row">
-				<div class="col s12 center">
-					<h3>
-						<i class="mdi-content-send red-text"></i>
-					</h3>
-					<h4>Contact Us</h4>
-					<p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque
-						tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien
-						id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend
-						sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum
-						ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus
-						orci luctus et ultrices posuere cubilia Curae;</p>
+			<div class="row" id="workoutsRow">
+				<div class="col s4" id="beginnerWorkouts">
+					Beginner
 				</div>
-			</div> -->
-					<div class="col" id="beginnerWorkouts">Beg</div>
-					<div class="col" id="intermediateWorkouts">Inter</div>
-					<div class="col" id="advancedWorkouts">Adv</div>
+				<div class="col s4" id="intermediateWorkouts">
+					Intermediate
+				</div>
+				<div class="col s4" id="advancedWorkouts">
+					Advanced
 				</div>
 			</div>
 
 			<div class="parallax-container valign-wrapper">
 				<div class="section no-pad-bot">
 					<div class="container">
-						<div class="row center">
-							<h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-						</div>
 					</div>
 				</div>
 				<div class="parallax">
@@ -232,6 +221,7 @@
 			</footer>
 
 
+
 			<!-- jQuery CDN -->
 			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -240,6 +230,7 @@
 			<!-- firebase -->
 			<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
 			<script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+
 			<!-- javascript -->
 			<script src="assets/js/init.js"></script>
 			<script src="assets/js/materialize.js"></script>

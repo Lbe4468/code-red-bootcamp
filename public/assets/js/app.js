@@ -60,12 +60,12 @@ var dateOfBirth;
 var userName;
 
 
+// when the document loads...
+$(document).ready(function () {
 
-// // when the document loads...
-// $(document).ready(function () {
 
-// 	// initialize firebase..
-// 	firebase.initializeApp(config);
+	// initialize firebase..
+ 	firebase.initializeApp(config);
 
 
 	// //password username authentication ect.
@@ -85,6 +85,7 @@ const auth = firebase.auth();
 const promise = auth.signInWithEmailAndPassword(email, password);
 //if not user will console log error
 promise.catch(e => console.log(e.message));
+
 });
 //add signup event
 //when sign up button is clicked this event function happens
@@ -114,6 +115,7 @@ auth.onAuthStateChanged(firebaseUser => {
 		console.log('Not logged in');
 	}
 });
+
 	//end authentication info.......
 
 	//clear index fields
@@ -234,6 +236,7 @@ auth.onAuthStateChanged(firebaseUser => {
 		}
 	});
 
+
 	// buildApiRequest('GET',
 	// '/youtube/v3/search',
 	// {'maxResults': '5',
@@ -304,3 +307,7 @@ auth.onAuthStateChanged(firebaseUser => {
 // // 	}
 // ).appendTo('body');
 });
+
+});
+
+

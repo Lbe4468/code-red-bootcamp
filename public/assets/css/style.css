@@ -64,3 +64,29 @@ footer.page-footer {
 .nav-wrapper{
 	color: #333;
 }
+
+#workoutsRow {
+	text-align: center;
+	margin-top: 1em;
+	color: red;
+	font-size: 3em;
+}
+
+h1 {
+	color: red;
+	text-align: center;
+}
+
+#dashboardHeader {
+	margin-top: 1.75em;
+}
+
+#userPic {
+	text-align: center;
+}
+
+#userInfo {
+	text-align: center;
+}
+
+
