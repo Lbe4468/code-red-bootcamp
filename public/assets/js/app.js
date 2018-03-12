@@ -1,3 +1,11 @@
+	
+// when the document loads...
+$(document).ready(function () {
+
+	// initialize firebase..
+	firebase.initializeApp(config);
+	
+	
 	// api key...
 	var config = {
 		apiKey: "AIzaSyBYfKRi1L1Bx3HjDzdPSzm22XIOssPbh-Y",
@@ -49,20 +57,20 @@ var database = firebase.database();
 var firstName;
 var lastName;
 var dateOfBirth;
-var email;
 var userName;
-var password;
+
 
 // when the document loads...
 $(document).ready(function () {
 
+
 	// initialize firebase..
-	firebase.initializeApp(config);
+ 	firebase.initializeApp(config);
 
 
 	// //password username authentication ect.
-const email = document.getElementById ("email");
-const password = document.getElementById("password");
+const txtEmail = document.getElementById ("email");
+const txtPassword = document.getElementById("password");
 const signUp = document.getElementById("quickstart-sign-up");
 const login = document.getElementById("quickstart-sign-in")
 const logout = document.getElementById("quickstart-log-out")
@@ -121,7 +129,7 @@ auth.onAuthStateChanged(firebaseUser => {
 		$("#password").val("");
 	}
 
-	//ebent listener for question page info submitted
+	//evsent listener for question page info submitted
 	$("#submit2").on("click", function (event) {
 
 
@@ -228,58 +236,78 @@ auth.onAuthStateChanged(firebaseUser => {
 		}
 	});
 
-});
 
-// PULLING FIREBASE USER DATA TO DISPLAY IN DASHBOARD - VERSION 1
-// var userDataRef = firebase
-//   .database()
-//   .ref()
-//   .orderByKey();
-// userDataRef.once("value").then(function(snapshot) {
-//   snapshot.forEach(function(childSnapshot) {
-//     var key = childSnapshot.key;
-// 		var childData = childSnapshot.val();
-// 		console.log(childData);
-// 		var name_val = childSnapshot.val().firstName;
-//     var id_val = childSnapshot.val().userName;
-//     $("#userInfo").append("<li>" + name_val);
+	// buildApiRequest('GET',
+	// '/youtube/v3/search',
+	// {'maxResults': '5',
+	//  'part': 'snippet',
+	//  'q': 'surfing',
+	//  'type': ''});
+
+
+// //google api information
+// var google = {
+// 	apiKey: "53c434b55c046b2715268b5b2c9b75505fefb822",
+// 	authDomain: "code-red-bootcamp@project-670e0.iam.gserviceaccount.com",
+// 	databaseURL: "https://console.developers.google.com/iam-admin/serviceaccounts/project?project=project-670e0",
+// 	projectId: "project-670e0",
+// 	storageBucket: "",
+// 	messagingSenderId: ""
+// };
+
+
+
+// 	//get demonstrations on demo page...
+// 		// call api to page
+// 		function search() {
+// 	var gapiClient = $.ajax({
+// 		method: "GET",
+// 		url:"code-red-bootcamp@project-670e0.iam.gserviceaccount.com"
+// 	});
+//   var q = $('#query').val();
+//   var request = gapiClient.youtube.search.list({
+//     q: q,
+//     part: 'snippet'
 //   });
-// });
 
-// PULLING FIREBASE USER DATA TO DISPLAY IN DASHBOARD - VERSION 2
-database.ref().on("value", function(snapshot) {
-  // console.log(snapshot.val());
-  snapshot.forEach(function(childSnapshot) {
-    // console.log(childSnapshot);
-    var childData = childSnapshot.val();
-    // console.log(childData);
-    var username = childSnapshot.val().userName;
-    console.log(username);
-    $("#displayUserName").append(username);
-  });
+
+
+// // After the API loads, call a function to enable the search box.
+// function handleAPILoaded() {
+// 	console.log("hi")
+//   $('#search-button').attr('disabled', false);
+// }
+// function makeRequest() {
+// 	var request = gapi.client.urlshortener.url.get({
+// 		'shortUrl': 'code-red-bootcamp@project-670e0.iam.gserviceaccount.com'
+// 	});
+// 	request.then(function(response) {
+// 		appendResults(response.result.longUrl);
+// 	}, function(reason) {
+// 		console.log('Error: ' + reason.result.error.message);
+// 	});
+// }
+
+// function init() {
+// 	gapi.client.setApiKey('53c434b55c046b2715268b5b2c9b75505fefb822');
+// 	gapi.client.load('urlshortener', 'v1').then(makeRequest);
+// }
+
+// $('<iframe />', {
+// 	src: url,
+// 	id:  'receiver',
+// 	frameborder: 1,
+// 	load:function(){
+
+// 		request.execute(function(response) {
+		
+// 			var str = JSON.stringify(response.result);
+// 			$('#search-container').html('<pre>' + str + '</pre>');
+// 		});
+// // 	}
+// ).appendTo('body');
 });
 
-// Event to trigger file select to upload profile picture to firebase
-$("#profile-image").on("click", function() {
-	// event to activate/show image file selection/upload
-	$("#file-input").trigger("click");
-	// Upon file being selected...
-  $("input:file").change(function(e) {
-    var file = e.target.files[0];
-    // Get current username from Firebase
-    var user = firebase.auth().currentUser;
-    // Create a Storage Ref w/ username
-    var storageRef = firebase
-      .storage()
-      .ref(user + "/profilePicture/" + file.name);
-    // Upload file to Firebase 
-    var task = storageRef.put(file);
-    var name = file.name;
-    var size = file.size;
-    var type = file.type;
-    console.log(file);
-    console.log(name);
-    console.log(size);
-    console.log(type);
-  });
 });
+
+
