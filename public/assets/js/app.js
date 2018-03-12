@@ -60,6 +60,7 @@ var dateOfBirth;
 var userName;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 // // when the document loads...
@@ -68,9 +69,15 @@ var userName;
 // when the document loads...
 $(document).ready(function () {
 >>>>>>> master
+=======
 
-// 	// initialize firebase..
-// 	firebase.initializeApp(config);
+// when the document loads...
+$(document).ready(function () {
+
+>>>>>>> f1267f980e7340bc6c3c88af57222deea7b14854
+
+	// initialize firebase..
+ 	firebase.initializeApp(config);
 
 
 	// //password username authentication ect.
@@ -242,6 +249,10 @@ auth.onAuthStateChanged(firebaseUser => {
 	});
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> f1267f980e7340bc6c3c88af57222deea7b14854
 	// buildApiRequest('GET',
 	// '/youtube/v3/search',
 	// {'maxResults': '5',
@@ -312,6 +323,7 @@ auth.onAuthStateChanged(firebaseUser => {
 // // 	}
 // ).appendTo('body');
 });
+<<<<<<< HEAD
 =======
 });
 
@@ -369,3 +381,9 @@ $("#profile-image").on("click", function() {
   });
 });
 >>>>>>> master
+=======
+
+});
+
+
+>>>>>>> f1267f980e7340bc6c3c88af57222deea7b14854
