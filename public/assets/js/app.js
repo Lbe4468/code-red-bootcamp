@@ -59,22 +59,14 @@ var lastName;
 var dateOfBirth;
 var userName;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-
-// // when the document loads...
-// $(document).ready(function () {
-=======
-// when the document loads...
-$(document).ready(function () {
->>>>>>> master
-=======
 
 // when the document loads...
 $(document).ready(function () {
 
->>>>>>> f1267f980e7340bc6c3c88af57222deea7b14854
+
+// when the document loads...
+$(document).ready(function () {
 
 	// initialize firebase..
  	firebase.initializeApp(config);
@@ -248,11 +240,7 @@ auth.onAuthStateChanged(firebaseUser => {
 		}
 	});
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> f1267f980e7340bc6c3c88af57222deea7b14854
+// f1267f980e7340bc6c3c88af57222deea7b14854
 	// buildApiRequest('GET',
 	// '/youtube/v3/search',
 	// {'maxResults': '5',
@@ -322,9 +310,7 @@ auth.onAuthStateChanged(firebaseUser => {
 // 		});
 // // 	}
 // ).appendTo('body');
-});
-<<<<<<< HEAD
-=======
+
 });
 
 // PULLING FIREBASE USER DATA TO DISPLAY IN DASHBOARD - VERSION 1
@@ -380,10 +366,4 @@ $("#profile-image").on("click", function() {
     console.log(type);
   });
 });
->>>>>>> master
-=======
 
-});
-
-
->>>>>>> f1267f980e7340bc6c3c88af57222deea7b14854
