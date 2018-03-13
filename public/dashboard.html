@@ -68,13 +68,8 @@
 			<img src="assets/images/gym-image-2.jpg" alt="Unsplashed background img 1">
 		</div>
 	</div>
-
-
-	<div class="container">
-		<div class="section">
-
-			<!--   Icon Section   -->
-			<!-- <div class="row">
+	<!--   Icon Section   -->
+	<!-- <div class="row">
 				<div class="col s12 m4">
 					<div class="icon-block">
 						<h2 class="center red-text">
@@ -115,55 +110,59 @@
 
 		</div>
 	</div> -->
-			<div class="row" id="user-profile">
-				<div class="row" id="userPic">
-					<img class="responsive-img" src="assets/images/pic-placeholder.png" id="profile-image"></img><br>
-					<p id="clickToUpdate">Click Image to Update Avatar</p>
-					<input id="file-input" type="file" value="upload" style="display: none;" />
-				</div>
-				<div class="row">
-					<ul id="userInfo">
-						<li id="displayUserName"></li>
-						<li></li>
-						<li></li>
-					</ul>
+	<div class="row" id="user-profile">
+		<div class="row" id="userPic">
+			<img class="responsive-img" src="assets/images/pic-placeholder.png" id="profile-image"></img>
+			<br>
+			<p id="clickToUpdate">Click Image to Update Avatar</p>
+			<progress value="0" max="100" id="uploader">0%</progress>
+			<input id="file-input" type="file" value="upload" style="display: none;" />
+		</div>
+		<div class="row">
+			<ul id="userInfo">
+				<li id="displayUserName"></li>
+				<li id="displayUserFirstLastName"></li>
+				<li id="displayUserDOB"></li>
+				<li id="displayUserEmail"></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="parallax-container valign-wrapper">
+		<div class="section no-pad-bot">
+			<div class="container">
+				<div class="row center">
 				</div>
 			</div>
+		</div>
+		<div class="parallax">
+			<img src="assets/images/gym-image-1.jpg" alt="Unsplashed background img 2">
+		</div>
+	</div>
 
-			<div class="parallax-container valign-wrapper">
-				<div class="section no-pad-bot">
-					<div class="container">
-						<div class="row center">
-						</div>
-					</div>
-				</div>
-				<div class="parallax">
-					<img src="assets/images/gym-image-1.jpg" alt="Unsplashed background img 2">
-				</div>
+	<div class="row" id="workoutsRow">
+		<div class="col s4" id="beginnerWorkouts">
+			Beginner
+		</div>
+		<div class="col s4" id="intermediateWorkouts">
+			Intermediate
+		</div>
+		<div class="col s4" id="advancedWorkouts">
+			Advanced
+		</div>
+	</div>
+
+	<div class="parallax-container valign-wrapper">
+		<div class="section no-pad-bot">
+			<div class="container">
 			</div>
+		</div>
+		<div class="parallax">
+			<img src="assets/images/gym-image-3.jpg" alt="Unsplashed background img 3">
+		</div>
+	</div>
 
-			<div class="row" id="workoutsRow">
-				<div class="col s4" id="beginnerWorkouts">
-					Beginner
-				</div>
-				<div class="col s4" id="intermediateWorkouts">
-					Intermediate
-				</div>
-				<div class="col s4" id="advancedWorkouts">
-					Advanced
-				</div>
-			</div>
-
-			<div class="parallax-container valign-wrapper">
-				<div class="section no-pad-bot">
-					<div class="container">
-					</div>
-				</div>
-				<div class="parallax">
-					<img src="assets/images/gym-image-3.jpg" alt="Unsplashed background img 3">
-				</div>
-			</div>
-
+<<<<<<< HEAD
 			<footer class="page-footer red">
 				<div class="container">
 					<div class="row">
@@ -202,20 +201,67 @@
 
 
 
+=======
+	<footer class="page-footer red">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Team Bio</h5>
+					<p class="grey-text text-lighten-4">We are a passionate team of collaborators that want ot help people spark their energy to pursue their passions.</p>
+				</div>
+				<div class="col l3 s12">
+					<h5 class="white-text">Connect</h5>
+					<ul>
+						<li>
+							<a class="white-text" href="#!">Luke Epps</a>
+						</li>
+						<li>
+							<a class="white-text" href="#!">Amy Harris</a>
+						</li>
+						<li>
+							<a class="white-text" href="#!">April Wilson</a>
+						</li>
+					</ul>
+				</div>
+>>>>>>> 84c261012d9e79c0a04905f022a4e02fed20e50e
 
+			</footer>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				Created by
+				<a class="burgandy-text text-lighten-3" href="index.html">Team Code Red</a>
+			</div>
+		</div>
+	</footer>
 			<!-- firebase -->
 
 			<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script> //
 			<!-- jQuery CDN -->
+<<<<<<< HEAD
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> //
 
 
+=======
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> /
+
+>>>>>>> 84c261012d9e79c0a04905f022a4e02fed20e50e
 			<!-- javascript -->
 			<script src="assets/js/init.js"></script>
 			<script src="assets/js/materialize.js"></script>
 			<script src="assets/js/app.js"></script>
-
-
+	<!-- firebase -->
+	<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-messaging.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="assets/js/materialize.js"></script>
+	<script src="assets/js/init.js"></script>
+	<script src="assets/js/app.js"></script>
 
 </body>
 

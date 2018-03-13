@@ -1,332 +1,416 @@
 [
   {
-    "category": "Maintain",
-    "name": "Workout 1",
-    "level": "Beginner",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "maintain",
+    "name": [
+      "Barbell Back Squats",
+      "Barbell Reverse Lunges",
+      "Crunches",
+      "Lying Leg Lifts",
+      "Plank Jump In and Outs"
+    ],
+    "level": "beg",
+    "muscleGroups": ["Abs", "Glutes", "Legs"],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform 10 reps each of the first two exercises as a superset.  Rest one minute.  Repeat 3 times.  Repeat for the next two exercises.  Perform the last exercise for 30 seconds.  Rest 30 seconds.  Repeat three times."
     ]
   },
   {
-    "category": "Maintain",
-    "name": "Workout 2",
-    "level": "Beginner",
-    "muscleGroups": ["Chest", "Shoulders"],
+    "category": "maintain",
+    "name": [
+      "Tricep Dips",
+      "Push Ups",
+      "Dumbbell Shoulder Press",
+      "Tricep Kickbacks",
+      "Dumbbell Chest Flies",
+      "Plank Shoulder Taps"
+    ],
+    "level": "beg",
+    "muscleGroups": ["Triceps", "Shoulders", "Chest"],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform 10 reps each of the first three exercises as a superset.  Rest 1 minute.  Repeat 3 times. Repeat for the next three exercises."
     ]
   },
   {
-    "category": "Maintain",
-    "name": "Workout 3",
-    "level": "Beginner",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "maintain",
+    "name": "Cardio",
+    "level": "beg",
+    "muscleGroups": ["Cardio"],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Walk for 5 minutes at an easy pace to warm up.  Run 2 minutes.  Walk 30 seconds. Repeat 10 times.  Walk at an easy pace for a 5 minute cool down."
     ]
   },
   {
-    "category": "Maintain",
-    "name": "Workout 4",
-    "level": "Beginner",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "maintain",
+    "name": [
+      "Dumbbell Curls",
+      "Barbell Bent Over Rows",
+      "Barbell Wide Curls",
+      "Dumbbell Single Arm Rows",
+      "Tuck Jumps"
+    ],
+    "level": "beg",
+    "muscleGroups": ["Biceps", "Back"],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Set a timer for 30 minutes.  Perform each exercise 10 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."
     ]
   },
   {
-    "category": "Maintain",
-    "name": "Workout 5",
-    "level": "Beginner",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "maintain",
+    "name": [
+      "Bodyweight Squats",
+      "Wall Sits",
+      "Donkey Kicks",
+      "Glute Bridges",
+      "Lying Leg Lifts"
+    ],
+    "level": "beg",
+    "muscleGroups": ["Glutes", "Legs"],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Set a timer for 30 minutes.  Perform each exercise 10 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."
     ]
   },
   {
-    "category": "Maintain",
-    "name": "Workout 6",
-    "level": "Beginner",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "maintain",
+    "name": [
+      "Dumbbell Russian Twists",
+      "Dumbbell Cross Body Toe Touches",
+      "Plank",
+      "Side Planks"
+    ],
+    "level": "beg",
+    "muscleGroups": ["Abs"],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Set a timer for 30 minutes.  Perform each exercise 10 times or 30 seconds for the planks. Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."
     ]
   },
   {
-    "category": "Maintain",
-    "name": "Workout 7",
-    "level": "Beginner",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "maintain",
+    "name": [
+      "Dumbbell Hammer Curls",
+      "Barbell Close Grip Press",
+      "Renegade Row",
+      "Dumbbell Concentration Curls",
+      "Barbell Overhead Extensions",
+      "Dumbbell Pullovers"
+    ],
+    "level": "beg",
+    "muscleGroups": ["Biceps", "Triceps", "Back"],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform 10 reps each of the first three exercises as a superset.  Rest 1 minute.  Repeat 3 times. Repeat for the next three exercises."
     ]
   },
   {
-    "category": "Maintain",
-    "name": "Workout 8",
-    "level": "Beginner",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "maintain",
+    "name": [
+      "Dumbbell Squat Press",
+      "Kettlebell Sumo Squats with Upright Row",
+      "Mountain Climbers"
+    ],
+    "level": "beg",
+    "muscleGroups": ["Shoulders", "Legs", "Glutes"],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform each exercise 10 times.  Rest one minute.  Repeat the circuit 5 times."
     ]
   },
   {
-    "category": "Maintain",
-    "name": "Workout 9",
-    "level": "Beginner",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "maintain",
+    "name": "HIIT Cardio",
+    "level": "beg",
+    "muscleGroups": ["Cardio"],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Walk for 5 minutes at an easy pace to warm up.  Run 30 seconds.  Do 10 burpees. Rest 1 minute. Repeat 10 times.  Walk at an easy pace for a 5 minute cool down."
     ]
   },
   {
-    "category": "Maintain",
-    "name": "Workout 10",
-    "level": "Beginner",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "maintain",
+    "name": [
+      "Dumbbell Chest Press",
+      "Plank",
+      "Incline Push Ups",
+      "Side Plank",
+      "Push Ups",
+      "Side Plank"
+    ],
+    "level": "beg",
+    "muscleGroups": ["Chest", "Abs"],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform 10 of each chest exercise and 30 seconds for each plank.  Rest one minute.  Repeat circuit 3 times."
     ]
   },
   {
-    "category": "Maintain",
-    "name": "Workout 1",
-    "level": "Intermediate",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
-    ]
-  },
-  {
-    "category": "Maintain",
-    "name": "Workout 2",
-    "level": "Intermediate",
-    "muscleGroups": ["Chest", "Shoulders"],
-    "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
-    ]
-  },
-  {
-    "category": "Maintain",
-    "name": "Workout 3",
-    "level": "Intermediate",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
-    ]
-  },
-  {
-    "category": "Maintain",
-    "name": "Workout 4",
-    "level": "Intermediate",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
-    ]
-  },
-  {
-    "category": "Maintain",
-    "name": "Workout 5",
-    "level": "Intermediate",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
-    ]
-  },
-  {
-    "category": "Maintain",
-    "name": "Workout 6",
-    "level": "Intermediate",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
-    ]
-  },
-  {
-    "category": "Maintain",
-    "name": "Workout 7",
-    "level": "Intermediate",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
-    ]
-  },
-  {
-    "category": "Maintain",
-    "name": "Workout 8",
-    "level": "Intermediate",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
-    ]
-  },
-  {
-    "category": "Maintain",
-    "name": "Workout 9",
-    "level": "Intermediate",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
-    ]
-  },
-  {
-    "category": "Maintain",
-    "name": "Workout 10",
-    "level": "Intermediate",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
-    ]
-  },
-  {
-    "category": "Maintain",
-    "name": "Workout 1",
+    "category": "maintain",
+    "name": [
+      "Barbell Back Squats",
+      "Barbell Reverse Lunges",
+      "Crunches",
+      "Lying Leg Lifts",
+      "Plank Jump In and Outs"
+    ],
     "level": "inter",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "muscleGroups": ["Abs", "Glutes", "Legs"],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform 15 reps each of the first two exercises as a superset.  Rest one minute.  Repeat 3 times.  Repeat for the next two exercises.  Perform the last exercise for 30 seconds.  Rest 30 seconds.  Repeat three times."
     ]
   },
   {
-    "category": "Maintain",
-    "name": "Workout 2",
-    "level": "Advanced",
-    "muscleGroups": ["Chest", "Shoulders"],
+    "category": "maintain",
+    "name": [
+      "Tricep Dips",
+      "Push Ups",
+      "Dumbbell Shoulder Press",
+      "Tricep Kickbacks",
+      "Dumbbell Chest Flies",
+      "Plank Shoulder Taps"
+    ],
+    "level": "inter",
+    "muscleGroups": ["Triceps", "Shoulders", "Chest"],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform 15 reps each of the first three exercises as a superset.  Rest 1 minute.  Repeat 3 times. Repeat for the next three exercises."
     ]
   },
   {
-    "category": "Maintain",
-    "name": "Workout 3",
-    "level": "Advanced",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "maintain",
+    "name": "Cardio",
+    "level": "inter",
+    "muscleGroups": ["Cardio"],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Walk for 5 minutes at an easy pace to warm up.  Run 2 minutes.  Walk 30 seconds. Repeat 10 times.  Walk at an easy pace for a 5 minute cool down."
     ]
   },
   {
-    "category": "Maintain",
-    "name": "Workout 4",
-    "level": "Advanced",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "maintain",
+    "name": [
+      "Dumbbell Curls",
+      "Barbell Bent Over Rows",
+      "Barbell Wide Curls",
+      "Dumbbell Single Arm Rows",
+      "Tuck Jumps"
+    ],
+    "level": "inter",
+    "muscleGroups": ["Biceps", "Back"],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Set a timer for 30 minutes.  Perform each exercise 10 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."
     ]
   },
   {
-    "category": "Maintain",
-    "name": "Workout 5",
-    "level": "Advanced",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "maintain",
+    "name": [
+      "Bodyweight Squats",
+      "Wall Sits",
+      "Donkey Kicks",
+      "Glute Bridges",
+      "Lying Leg Lifts"
+    ],
+    "level": "inter",
+    "muscleGroups": ["Glutes", "Legs"],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Set a timer for 30 minutes.  Perform each exercise 15 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."
     ]
   },
   {
-    "category": "Maintain",
-    "name": "Workout 6",
-    "level": "Advanced",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "maintain",
+    "name": [
+      "Dumbbell Russian Twists",
+      "Dumbbell Cross Body Toe Touches",
+      "Plank",
+      "Side Planks"
+    ],
+    "level": "inter",
+    "muscleGroups": ["Abs"],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Set a timer for 30 minutes.  Perform each exercise 15 times or 30 seconds for the planks. Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."
     ]
   },
   {
-    "category": "Maintain",
-    "name": "Workout 7",
-    "level": "Advanced",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "maintain",
+    "name": [
+      "Dumbbell Hammer Curls",
+      "Barbell Close Grip Press",
+      "Renegade Row",
+      "Dumbbell Concentration Curls",
+      "Barbell Overhead Extensions",
+      "Dumbbell Pullovers"
+    ],
+    "level": "inter",
+    "muscleGroups": ["Biceps", "Triceps", "Back"],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform 15 reps each of the first three exercises as a superset.  Rest 1 minute.  Repeat 3 times. Repeat for the next three exercises."
     ]
   },
   {
-    "category": "Maintain",
-    "name": "Workout 8",
-    "level": "Advanced",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "maintain",
+    "name": [
+      "Dumbbell Squat Press",
+      "Kettlebell Sumo Squats with Upright Row",
+      "Mountain Climbers"
+    ],
+    "level": "inter",
+    "muscleGroups": ["Shoulders", "Legs", "Glutes"],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform each exercise 15 times.  Rest one minute.  Repeat the circuit 5 times."
     ]
   },
   {
-    "category": "Maintain",
-    "name": "Workout 9",
-    "level": "Advanced",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "maintain",
+    "name": "HIIT Cardio",
+    "level": "inter",
+    "muscleGroups": ["Cardio"],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Walk for 5 minutes at an easy pace to warm up.  Run 1 minute.  Do 10 burpees. Rest 1 minute. Repeat 10 times.  Walk at an easy pace for a 5 minute cool down."
     ]
   },
   {
-    "category": "Maintain",
-    "name": "Workout 10",
-    "level": "Advanced",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "maintain",
+    "name": [
+      "Dumbbell Chest Press",
+      "Plank",
+      "Incline Push Ups",
+      "Side Plank",
+      "Push Ups",
+      "Side Plank"
+    ],
+    "level": "inter",
+    "muscleGroups": ["Chest", "Abs"],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform 12 of each chest exercise and 45 seconds for each plank.  Rest one minute.  Repeat circuit 3 times."
+    ]
+  },
+  {
+    "category": "maintain",
+    "name": [
+      "Barbell Back Squat",
+      "Barbell Reverse Lunges",
+      "Crunches",
+      "Lying Leg Lifts",
+      "Plank Jump In and Outs"
+    ],
+    "level": "adv",
+    "muscleGroups": ["Abs", "Glutes", "Legs"],
+    "instructions": [
+      "Perform 20 reps each of the first two exercises as a superset.  Rest one minute.  Repeat 3 times.  Repeat for the next two exercises.  Perform the last exercise for 30 seconds.  Rest 30 seconds.  Repeat three times."
+    ]
+  },
+  {
+    "category": "maintain",
+    "name": [
+      "Tricep Dips",
+      "Push Ups",
+      "Dumbbell Shoulder Press",
+      "Tricep Kickbacks",
+      "Dumbbell Chest Flies",
+      "Plank Shoulder Taps"
+    ],
+    "level": "adv",
+    "muscleGroups": ["Triceps", "Shoulders", "Chest"],
+    "instructions": [
+      "Perform 15 reps each of the first three exercises as a superset.  Rest 1 minute.  Repeat 3 times. Repeat for the next three exercises."
+    ]
+  },
+  {
+    "category": "maintain",
+    "name": "Cardio",
+    "level": "adv",
+    "muscleGroups": ["Cardio"],
+    "instructions": [
+      "Walk for 5 minutes at an easy pace to warm up.  Run 2 minutes.  Walk 30 seconds. Repeat 10 times.  Walk at an easy pace for a 5 minute cool down."
+    ]
+  },
+  {
+    "category": "maintain",
+    "name": [
+      "Dumbbell Curls",
+      "Barbell Bent Over Rows",
+      "Barbell Wide Curls",
+      "Dumbbell Single Arm Rows",
+      "Tuck Jumps"
+    ],
+    "level": "adv",
+    "muscleGroups": ["Biceps", "Back"],
+    "instructions": [
+      "Set a timer for 30 minutes.  Perform each exercise 15 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."
+    ]
+  },
+  {
+    "category": "maintain",
+    "name": [
+      "Bodyweight Squats",
+      "Wall Sits",
+      "Donkey Kicks",
+      "Glute Bridges",
+      "Lying Leg Lifts"
+    ],
+    "level": "adv",
+    "muscleGroups": ["Glutes", "Legs"],
+    "instructions": [
+      "Set a timer for 30 minutes.  Perform each exercise 20 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."
+    ]
+  },
+  {
+    "category": "maintain",
+    "name": [
+      "Dumbbell Russian Twists",
+      "Dumbbell Cross Body Toe Touches",
+      "Plank",
+      "Side Planks"
+    ],
+    "level": "adv",
+    "muscleGroups": ["Abs"],
+    "instructions": [
+      "Set a timer for 30 minutes.  Perform each exercise 20 times or 30 seconds for the planks. Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."
+    ]
+  },
+  {
+    "category": "maintain",
+    "name": [
+      "Dumbbell Hammer Curls",
+      "Barbell Close Grip Press",
+      "Renegade Row",
+      "Dumbbell Concentration Curls",
+      "Barbell Overhead Extensions",
+      "Dumbbell Pullovers"
+    ],
+    "level": "adv",
+    "muscleGroups": ["Biceps", "Triceps", "Back"],
+    "instructions": [
+      "Perform 10 reps each of the first three exercises as a superset.  Rest 1 minute.  Repeat 4 times. Repeat for the next three exercises."
+    ]
+  },
+  {
+    "category": "maintain",
+    "name": [
+      "Dumbbell Squat Press",
+      "Kettlebell Sumo Squats with Upright Row",
+      "Mountain Climbers"
+    ],
+    "level": "adv",
+    "muscleGroups": ["Shoulders", "Legs", "Glutes"],
+    "instructions": [
+      "Perform each exercise 20 times.  Rest one minute.  Repeat the circuit 5 times."
+    ]
+  },
+  {
+    "category": "maintain",
+    "name": "HIIT Cardio",
+    "level": "adv",
+    "muscleGroups": ["Cardio"],
+    "instructions": [
+      "Walk for 5 minutes at an easy pace to warm up.  Run 1 minute.  Do 10 burpees. Rest 1 minute. Repeat 10 times.  Walk at an easy pace for a 5 minute cool down."
+    ]
+  },
+  {
+    "category": "maintain",
+    "name": [
+      "Dumbbell Chest Press",
+      "Plank",
+      "Incline Push Ups",
+      "Side Plank",
+      "Push Ups",
+      "Side Plank"
+    ],
+    "level": "adv",
+    "muscleGroups": ["Chest", "Abs"],
+    "instructions": [
+      "Perform 15 of each chest exercise and 1 minute for each plank.  Rest one minute.  Repeat circuit 3 times."
     ]
   }
 ]

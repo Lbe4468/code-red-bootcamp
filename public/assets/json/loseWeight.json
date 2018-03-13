@@ -1,5 +1,6 @@
 [
   {
+
         "category": "lose",
     "name": ["Bodyweight Squat", "Reverse Lunges","Squat Jumps", "Crunches", "Lying Leg Lifts", "Plank Jump In and Outs"],
     "level": "beg",
@@ -208,5 +209,6 @@
     "level": "adv",
     "muscleGroups": ["Chest", "Abs"],
     "instructions": ["Perform 15 of each push up exercise and 1 minute for each plank.  Rest one minute.  Repeat circuit 5 times."]
+
   }
 ]
