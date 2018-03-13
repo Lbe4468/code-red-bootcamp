@@ -1,242 +1,212 @@
 [
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+    "name": ["Barbell Back Squats", "Barbell Reverse Lunges", "Crunches", "Lying Leg Lifts", "Plank Jump In and Outs"],
     "level": "beg",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Abs", "Glutes", "Legs"],
+    "instructions": ["Perform 10 reps each of the first two exercises as a superset.  Rest one minute.  Repeat 3 times.  Repeat for the next two exercises.  Perform the last exercise for 30 seconds.  Rest 30 seconds.  Repeat three times."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": ["Tricep Dips", "Push Ups", "Dumbbell Shoulder Press", "Tricep Kickbacks", "Dumbbell Chest Flies", "Plank Shoulder Taps"],
     "level": "beg",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Triceps", "Shoulders", "Chest"],
+    "instructions": ["Perform 10 reps each of the first three exercises as a superset.  Rest 1 minute.  Repeat 3 times. Repeat for the next three exercises."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": "Cardio",
     "level": "beg",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
-  }
+    "muscleGroups": ["Cardio"],
+    "instructions": ["Walk for 5 minutes at an easy pace to warm up.  Run 2 minutes.  Walk 30 seconds. Repeat 10 times.  Walk at an easy pace for a 5 minute cool down."]
+  },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": ["Dumbbell Curls", "Barbell Bent Over Rows", "Barbell Wide Curls", "Dumbbell Single Arm Rows", "Tuck Jumps"],
     "level": "beg",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Biceps", "Back"],
+    "instructions": ["Set a timer for 30 minutes.  Perform each exercise 10 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": ["Bodyweight Squats", "Wall Sits", "Donkey Kicks", "Glute Bridges", "Lying Leg Lifts"],
     "level": "beg",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Glutes", "Legs"],
+    "instructions": ["Set a timer for 30 minutes.  Perform each exercise 10 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": ["Dumbbell Russian Twists", "Dumbbell Cross Body Toe Touches", "Plank", "Side Planks"],
     "level": "beg",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Abs"],
+    "instructions": ["Set a timer for 30 minutes.  Perform each exercise 10 times or 30 seconds for the planks. Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": ["Dumbbell Hammer Curls", "Barbell Close Grip Press", "Renegade Row", "Dumbbell Concentration Curls", "Barbell Overhead Extensions", "Dumbbell Pullovers"],
     "level": "beg",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Biceps", "Triceps", "Back"],
+    "instructions": ["Perform 10 reps each of the first three exercises as a superset.  Rest 1 minute.  Repeat 3 times. Repeat for the next three exercises."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": ["Dumbbell Squat Press", "Kettlebell Sumo Squats with Upright Row", "Mountain Climbers"],
     "level": "beg",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Shoulders", "Legs", "Glutes"],
+    "instructions": ["Perform each exercise 10 times.  Rest one minute.  Repeat the circuit 5 times."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": "HIIT Cardio",
     "level": "beg",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Cardio"],
+    "instructions": ["Walk for 5 minutes at an easy pace to warm up.  Run 30 seconds.  Do 10 burpees. Rest 1 minute. Repeat 10 times.  Walk at an easy pace for a 5 minute cool down."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": ["Dumbbell Chest Press", "Plank", "Incline Push Ups", "Side Plank", "Push Ups", "Side Plank"],
     "level": "beg",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Chest", "Abs"],
+    "instructions": ["Perform 10 of each chest exercise and 30 seconds for each plank.  Rest one minute.  Repeat circuit 3 times."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+    "name": ["Barbell Back Squats", "Barbell Reverse Lunges", "Crunches", "Lying Leg Lifts", "Plank Jump In and Outs"],
     "level": "inter",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Abs", "Glutes", "Legs"],
+    "instructions": ["Perform 15 reps each of the first two exercises as a superset.  Rest one minute.  Repeat 3 times.  Repeat for the next two exercises.  Perform the last exercise for 30 seconds.  Rest 30 seconds.  Repeat three times."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": ["Tricep Dips", "Push Ups", "Dumbbell Shoulder Press", "Tricep Kickbacks", "Dumbbell Chest Flies", "Plank Shoulder Taps"],
     "level": "inter",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Triceps", "Shoulders", "Chest"],
+    "instructions": ["Perform 15 reps each of the first three exercises as a superset.  Rest 1 minute.  Repeat 3 times. Repeat for the next three exercises."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": "Cardio",
     "level": "inter",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Cardio"],
+    "instructions": ["Walk for 5 minutes at an easy pace to warm up.  Run 2 minutes.  Walk 30 seconds. Repeat 10 times.  Walk at an easy pace for a 5 minute cool down."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": ["Dumbbell Curls", "Barbell Bent Over Rows", "Barbell Wide Curls", "Dumbbell Single Arm Rows", "Tuck Jumps"],
     "level": "inter",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Biceps", "Back"],
+    "instructions": ["Set a timer for 30 minutes.  Perform each exercise 10 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": ["Bodyweight Squats", "Wall Sits", "Donkey Kicks", "Glute Bridges", "Lying Leg Lifts"],
     "level": "inter",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Glutes", "Legs"],
+    "instructions": ["Set a timer for 30 minutes.  Perform each exercise 15 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": ["Dumbbell Russian Twists", "Dumbbell Cross Body Toe Touches", "Plank", "Side Planks"],
     "level": "inter",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Abs"],
+    "instructions": ["Set a timer for 30 minutes.  Perform each exercise 15 times or 30 seconds for the planks. Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": ["Dumbbell Hammer Curls", "Barbell Close Grip Press", "Renegade Row", "Dumbbell Concentration Curls", "Barbell Overhead Extensions", "Dumbbell Pullovers"],
     "level": "inter",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Biceps", "Triceps", "Back"],
+    "instructions": ["Perform 15 reps each of the first three exercises as a superset.  Rest 1 minute.  Repeat 3 times. Repeat for the next three exercises."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": ["Dumbbell Squat Press", "Kettlebell Sumo Squats with Upright Row", "Mountain Climbers"],
     "level": "inter",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Shoulders", "Legs", "Glutes"],
+    "instructions": ["Perform each exercise 15 times.  Rest one minute.  Repeat the circuit 5 times."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": "HIIT Cardio",
     "level": "inter",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Cardio"],
+    "instructions": ["Walk for 5 minutes at an easy pace to warm up.  Run 1 minute.  Do 10 burpees. Rest 1 minute. Repeat 10 times.  Walk at an easy pace for a 5 minute cool down."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": ["Dumbbell Chest Press", "Plank", "Incline Push Ups", "Side Plank", "Push Ups", "Side Plank"],
     "level": "inter",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Chest", "Abs"],
+    "instructions": ["Perform 12 of each chest exercise and 45 seconds for each plank.  Rest one minute.  Repeat circuit 3 times."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+    "name": ["Barbell Back Squat", "Barbell Reverse Lunges","Crunches", "Lying Leg Lifts", "Plank Jump In and Outs"],
     "level": "adv",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Abs", "Glutes", "Legs"],
+    "instructions": ["Perform 20 reps each of the first two exercises as a superset.  Rest one minute.  Repeat 3 times.  Repeat for the next two exercises.  Perform the last exercise for 30 seconds.  Rest 30 seconds.  Repeat three times."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": ["Tricep Dips", "Push Ups", "Dumbbell Shoulder Press", "Tricep Kickbacks", "Dumbbell Chest Flies", "Plank Shoulder Taps"],
     "level": "adv",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Triceps", "Shoulders", "Chest"],
+    "instructions": ["Perform 15 reps each of the first three exercises as a superset.  Rest 1 minute.  Repeat 3 times. Repeat for the next three exercises."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": "Cardio",
     "level": "adv",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Cardio"],
+    "instructions": ["Walk for 5 minutes at an easy pace to warm up.  Run 2 minutes.  Walk 30 seconds. Repeat 10 times.  Walk at an easy pace for a 5 minute cool down."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": ["Dumbbell Curls", "Barbell Bent Over Rows", "Barbell Wide Curls", "Dumbbell Single Arm Rows", "Tuck Jumps"],
     "level": "adv",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Biceps", "Back"],
+    "instructions": ["Set a timer for 30 minutes.  Perform each exercise 15 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": ["Bodyweight Squats", "Wall Sits", "Donkey Kicks", "Glute Bridges", "Lying Leg Lifts"],
     "level": "adv",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Glutes", "Legs"],
+    "instructions": ["Set a timer for 30 minutes.  Perform each exercise 20 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": ["Dumbbell Russian Twists", "Dumbbell Cross Body Toe Touches", "Plank", "Side Planks"],
     "level": "adv",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Abs"],
+    "instructions": ["Set a timer for 30 minutes.  Perform each exercise 20 times or 30 seconds for the planks. Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": ["Dumbbell Hammer Curls", "Barbell Close Grip Press", "Renegade Row", "Dumbbell Concentration Curls", "Barbell Overhead Extensions", "Dumbbell Pullovers"],
     "level": "adv",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Biceps", "Triceps", "Back"],
+    "instructions": ["Perform 10 reps each of the first three exercises as a superset.  Rest 1 minute.  Repeat 4 times. Repeat for the next three exercises."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": ["Dumbbell Squat Press", "Kettlebell Sumo Squats with Upright Row", "Mountain Climbers"],
     "level": "adv",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Shoulders", "Legs", "Glutes"],
+    "instructions": ["Perform each exercise 20 times.  Rest one minute.  Repeat the circuit 5 times."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": "HIIT Cardio",
     "level": "adv",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Cardio"],
+    "instructions": ["Walk for 5 minutes at an easy pace to warm up.  Run 1 minute.  Do 10 burpees. Rest 1 minute. Repeat 10 times.  Walk at an easy pace for a 5 minute cool down."]
   },
   {
 		"category": "maintain",
-		"name": "Bodyweight Squat",
+		"name": ["Dumbbell Chest Press", "Plank", "Incline Push Ups", "Side Plank", "Push Ups", "Side Plank"],
     "level": "adv",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-    ]
+    "muscleGroups": ["Chest", "Abs"],
+    "instructions": ["Perform 15 of each chest exercise and 1 minute for each plank.  Rest one minute.  Repeat circuit 3 times."]
   }
 ]
