@@ -72,7 +72,7 @@ footer.page-footer {
 	font-size: 3em;
 }
 
-h1 {
+h1, h4 {
 	color: red;
 	text-align: center;
 }
@@ -89,4 +89,15 @@ h1 {
 	text-align: center;
 }
 
+#profile-image {
+	margin-top: 1em;
+}
 
+#clickToUpdate {
+	color: red;
+}
+
+li {
+	color: red;
+	font-size: 2em;
+}
