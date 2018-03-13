@@ -87,6 +87,7 @@ const password = txtPassword.value;
 const auth = firebase.auth();
 //if user will log in
 const promise = auth.signInWithEmailAndPassword(email, password);
+$('	<a href="dashboard.html"></a>')
 //if not user will console log error
 promise.catch(e => console.log(e.message));
 
@@ -104,6 +105,7 @@ const auth = firebase.auth();
 const promise = auth.creatUserWithEmailAndPassword(email, password);
 // will console log error
 promise.catch(e => console.log(e.message));
+$('	<a href="question.html"></a>')
 });
 //add authentication listener
 firebase.auth.onAuthStateChanged(firebaseUser => {});
