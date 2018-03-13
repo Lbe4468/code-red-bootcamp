@@ -9,8 +9,11 @@ $(function() {
     messagingSenderId: "926767366245"
   };
   firebase.initializeApp(config);
+	
+// when the document loads...
+$(document).ready(function () {
 
-  var questions = [
+var questions = [
     {
       question: "How many days a week do you hit the gym?",
       choices: [
@@ -54,6 +57,7 @@ $(function() {
   var signUpEmail;
   var signUpPassword;
 
+
   function clearField() {
     $("#first_name").val("");
     $("#last_name").val("");
@@ -62,6 +66,7 @@ $(function() {
     $("#username").val("");
     $("#signUpPassword").val("");
   }
+
 
   // event listener for question page info submitted
   $("#quick-start-sign-up").on("click", function(event) {
@@ -294,4 +299,80 @@ $(function() {
       console.log(type);
     });
   });
+
+
+	// buildApiRequest('GET',
+	// '/youtube/v3/search',
+	// {'maxResults': '5',
+	//  'part': 'snippet',
+	//  'q': 'surfing',
+	//  'type': ''});
+
+
+// //google api information
+// var google = {
+// 	apiKey: "53c434b55c046b2715268b5b2c9b75505fefb822",
+// 	authDomain: "code-red-bootcamp@project-670e0.iam.gserviceaccount.com",
+// 	databaseURL: "https://console.developers.google.com/iam-admin/serviceaccounts/project?project=project-670e0",
+// 	projectId: "project-670e0",
+// 	storageBucket: "",
+// 	messagingSenderId: ""
+// };
+
+
+
+// 	//get demonstrations on demo page...
+// 		// call api to page
+// 		function search() {
+// 	var gapiClient = $.ajax({
+// 		method: "GET",
+// 		url:"code-red-bootcamp@project-670e0.iam.gserviceaccount.com"
+// 	});
+//   var q = $('#query').val();
+//   var request = gapiClient.youtube.search.list({
+//     q: q,
+//     part: 'snippet'
+//   });
+
+
+
+// // After the API loads, call a function to enable the search box.
+// function handleAPILoaded() {
+// 	console.log("hi")
+//   $('#search-button').attr('disabled', false);
+// }
+// function makeRequest() {
+// 	var request = gapi.client.urlshortener.url.get({
+// 		'shortUrl': 'code-red-bootcamp@project-670e0.iam.gserviceaccount.com'
+// 	});
+// 	request.then(function(response) {
+// 		appendResults(response.result.longUrl);
+// 	}, function(reason) {
+// 		console.log('Error: ' + reason.result.error.message);
+// 	});
+// }
+
+// function init() {
+// 	gapi.client.setApiKey('53c434b55c046b2715268b5b2c9b75505fefb822');
+// 	gapi.client.load('urlshortener', 'v1').then(makeRequest);
+// }
+
+// $('<iframe />', {
+// 	src: url,
+// 	id:  'receiver',
+// 	frameborder: 1,
+// 	load:function(){
+
+// 		request.execute(function(response) {
+		
+// 			var str = JSON.stringify(response.result);
+// 			$('#search-container').html('<pre>' + str + '</pre>');
+// 		});
+// // 	}
+// ).appendTo('body');
 });
+
+
+});
+
+

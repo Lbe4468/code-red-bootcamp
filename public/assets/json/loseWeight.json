@@ -1,401 +1,214 @@
 [
   {
-    "category": "lose",
-    "name": [
-      "Bodyweight Squats",
-      "Reverse Lunges",
-      "Squat Jumps",
-      "Crunches",
-      "Lying Leg Lifts",
-      "Plank Jump In and Outs"
-    ],
+
+        "category": "lose",
+    "name": ["Bodyweight Squat", "Reverse Lunges","Squat Jumps", "Crunches", "Lying Leg Lifts", "Plank Jump In and Outs"],
     "level": "beg",
     "muscleGroups": ["Abs", "Glutes", "Legs"],
-    "instructions": [
-      "Set a timer for 30 minutes.  Perform each exercise 10 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."
-    ]
+    "instructions": ["Set a timer for 30 minutes.  Perform each exercise 10 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."]
   },
   {
-    "category": "lose",
-    "name": [
-      "Tricep Dips",
-      "Push Ups",
-      "Plank Shoulder Taps",
-      "Mountain Climbers"
-    ],
+        "category": "lose",
+        "name": ["Tricep Dips", "Push Ups", "Plank Shoulder Taps", "Mountain Climbers"],
     "level": "beg",
     "muscleGroups": ["Triceps", "Shoulders", "Chest"],
-    "instructions": [
-      "Set a timer for 30 minutes.  Perform each exercise 10 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."
-    ]
+    "instructions": ["Set a timer for 30 minutes.  Perform each exercise 10 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."]
   },
   {
-    "category": "lose",
-    "name": "HIIT Cardio",
+        "category": "lose",
+        "name": "HIIT Cardio",
     "level": "beg",
     "muscleGroups": ["Cardio"],
-    "instructions": [
-      "Walk for 5 minutes at an easy pace to warm up.  Run 30 seconds.  Walk 30 seconds. Repeat 20 times.  Walk at an easy pace for a 5 minute cool down."
-    ]
+    "instructions": ["Walk for 5 minutes at an easy pace to warm up.  Run 30 seconds.  Walk 30 seconds. Repeat 20 times.  Walk at an easy pace for a 5 minute cool down."]
   },
   {
-    "category": "lose",
-    "name": [
-      "Dumbbell Curls",
-      "Bent Over Rows",
-      "High Knees",
-      "Dumbbell Wide Curls",
-      "Single Arm Rows",
-      "Butt Kickers"
-    ],
+        "category": "lose",
+        "name": ["Dumbell Curls", "Bent Over Rows", "High Knees", "Dumbell Wide Curls", "Single Arm Rows", "Butt Kickers"],
     "level": "beg",
     "muscleGroups": ["Biceps", "Back"],
-    "instructions": [
-      "Set a timer for 30 minutes.  Perform each exercise 10 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."
-    ]
+    "instructions": ["Set a timer for 30 minutes.  Perform each exercise 10 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."]
   },
   {
-    "category": "lose",
-    "name": [
-      "Bodyweight Squats",
-      "Wall Sits",
-      "Donkey Kicks",
-      "Glute Bridges",
-      "Jumping Lunges"
-    ],
+        "category": "lose",
+        "name": ["Bodyweight Squat", "Wall Sits", "Donkey Kicks", "Glute Bridges", "Jumping Lunges"],
     "level": "beg",
     "muscleGroups": ["Glutes", "Legs"],
-    "instructions": [
-      "Set a timer for 30 minutes.  Perform each exercise 10 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."
-    ]
+    "instructions": ["Set a timer for 30 minutes.  Perform each exercise 10 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."]
   },
   {
-    "category": "lose",
-    "name": [
-      "Russian Twists",
-      "Plank",
-      "Reverse Crunches",
-      "Plank Jacks",
-      "Extended Crunches",
-      "Side Planks"
-    ],
+        "category": "lose",
+        "name": ["Russian Twists", "Plank", "Reverse Crunches", "Plank Jacks", "Extended Crunces", "Side Planks"],
     "level": "beg",
     "muscleGroups": ["Abs"],
-    "instructions": [
-      "Perform the first three exercise for one minute each.  Take one minute rest.  Perform the next three exercises for one minute each.  Rest one minute.  Repeat the circuit two times."
-    ]
+    "instructions": ["Perform the first three exercise for one minute each.  Take one minute rest.  Perform the next three exercises for one minute each.  Rest one minute.  Repeat the circuit two times."]
   },
   {
-    "category": "lose",
-    "name": ["Dumbbell Hammer Curls", "Tricep Push Ups", "Kettlebell Swings"],
+        "category": "lose",
+        "name": ["Dumbell Hammer Curls", "Tricep Push Ups", "Kettlebell Swings"],
     "level": "beg",
     "muscleGroups": ["Biceps", "Triceps", "Back"],
-    "instructions": [
-      "Perform each exercise 10 times.  Rest one minute.  Repeat the circuit 5 times."
-    ]
+    "instructions": ["Perform each exercise 10 times.  Rest one minute.  Repeat the circuit 5 times."]
   },
   {
-    "category": "lose",
-    "name": [
-      "Dumbbell Squat Press",
-      "Kettlebell Sumo Squats with Upright Row",
-      "Mountain Climbers"
-    ],
+        "category": "lose",
+        "name": ["Dumbell Squat Press","Kettlebell Sumo Squats with Upright Row", "Mountain Climbers"],
     "level": "beg",
     "muscleGroups": ["Shoulders", "Legs", "Glutes"],
-    "instructions": [
-      "Perform each exercise 10 times.  Rest one minute.  Repeat the circuit 5 times."
-    ]
+    "instructions": ["Perform each exercise 10 times.  Rest one minute.  Repeat the circuit 5 times."]
   },
   {
-    "category": "lose",
-    "name": "HIIT Cardio",
+        "category": "lose",
+        "name": "HIIT Cardio",
     "level": "beg",
     "muscleGroups": ["Cardio"],
-    "instructions": [
-      "Walk for 5 minutes at an easy pace to warm up.  Run 30 seconds.  Do 10 burpees. Rest 1 minute. Repeat 10 times.  Walk at an easy pace for a 5 minute cool down."
-    ]
+    "instructions": ["Walk for 5 minutes at an easy pace to warm up.  Run 30 seconds.  Do 10 burpees. Rest 1 minute. Repeat 10 times.  Walk at an easy pace for a 5 minute cool down."]
   },
   {
-    "category": "lose",
-    "name": [
-      "Decline Push Ups",
-      "Plank",
-      "Incline Push Ups",
-      "Side Plank",
-      "Push Ups",
-      "Side Plank"
-    ],
+        "category": "lose",
+        "name": ["Decline Push Ups", "Plank", "Incline Push Ups", "Side Plank", "Push Ups", "Side Planks"],
     "level": "beg",
     "muscleGroups": ["Chest", "Abs"],
-    "instructions": [
-      "Perform 10 of each push up exercise and 30 seconds for each plank.  Rest one minute.  Repeat circuit 3 times."
-    ]
+    "instructions": ["Perform 10 of each push up exercise and 30 seconds for each plank.  Rest one minute.  Repeat circuit 3 times."]
   },
   {
-    "category": "lose",
-    "name": [
-      "Bodyweight Squats",
-      "Reverse Lunges",
-      "Squat Jumps",
-      "Crunches",
-      "Lying Leg Lifts",
-      "Plank Jump In and Outs"
-    ],
+        "category": "lose",
+    "name": ["Bodyweight Squat", "Reverse Lunges","Squat Jumps", "Crunches", "Lying Leg Lifts", "Plank Jump In and Outs"],
     "level": "inter",
     "muscleGroups": ["Abs", "Glutes", "Legs"],
-    "instructions": [
-      "Set a timer for 30 minutes.  Perform each exercise 15 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."
-    ]
+    "instructions": ["Set a timer for 30 minutes.  Perform each exercise 15 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."]
   },
   {
-    "category": "lose",
-    "name": [
-      "Tricep Dips",
-      "Push Ups",
-      "Plank Shoulder Taps",
-      "Mountain Climbers"
-    ],
+        "category": "lose",
+        "name": ["Tricep Dips", "Push Ups", "Plank Shoulder Taps", "Mountain Climbers"],
     "level": "inter",
     "muscleGroups": ["Triceps", "Shoulders", "Chest"],
-    "instructions": [
-      "Set a timer for 30 minutes.  Perform each exercise 15 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."
-    ]
+    "instructions": ["Set a timer for 30 minutes.  Perform each exercise 15 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."]
   },
   {
-    "category": "lose",
-    "name": "HIIT Cardio",
+        "category": "lose",
+        "name": "HIIT Cardio",
     "level": "inter",
     "muscleGroups": ["Cardio"],
-    "instructions": [
-      "Walk for 5 minutes at an easy pace to warm up.  Run 40 seconds.  Walk 20 seconds. Repeat 20 times.  Walk at an easy pace for a 5 minute cool down."
-    ]
+    "instructions": ["Walk for 5 minutes at an easy pace to warm up.  Run 40 seconds.  Walk 20 seconds. Repeat 20 times.  Walk at an easy pace for a 5 minute cool down."]
   },
   {
-    "category": "lose",
-    "name": [
-      "Dumbbell Curls",
-      "Bent Over Rows",
-      "High Knees",
-      "Dumbbell Wide Curls",
-      "Single Arm Rows",
-      "Butt Kickers"
-    ],
+        "category": "lose",
+        "name": ["Dumbell Curls", "Bent Over Rows", "High Knees", "Dumbell Wide Curls", "Single Arm Rows", "Butt Kickers"],
     "level": "inter",
     "muscleGroups": ["Biceps", "Back"],
-    "instructions": [
-      "Set a timer for 30 minutes.  Perform each exercise 15 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."
-    ]
+    "instructions": ["Set a timer for 30 minutes.  Perform each exercise 15 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."]
   },
   {
-    "category": "lose",
-    "name": [
-      "Bodyweight Squats",
-      "Wall Sits",
-      "Donkey Kicks",
-      "Glute Bridges",
-      "Jumping Lunges"
-    ],
+        "category": "lose",
+        "name": ["Bodyweight Squat", "Wall Sits", "Donkey Kicks", "Glute Bridges", "Jumping Lunges"],
     "level": "inter",
     "muscleGroups": ["Glutes", "Legs"],
-    "instructions": [
-      "Set a timer for 30 minutes.  Perform each exercise 15 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."
-    ]
+    "instructions": ["Set a timer for 30 minutes.  Perform each exercise 15 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."]
   },
   {
-    "category": "lose",
-    "name": [
-      "Russian Twists",
-      "Plank",
-      "Reverse Crunches",
-      "Plank Jacks",
-      "Extended Crunches",
-      "Side Planks"
-    ],
+        "category": "lose",
+        "name": ["Russian Twists", "Plank", "Reverse Crunches", "Plank Jacks", "Extended Crunces", "Side Planks"],
     "level": "inter",
     "muscleGroups": ["Abs"],
-    "instructions": [
-      "Perform the first three exercise for one minute each.  Take one minute rest.  Perform the next three exercises for one minute each.  Rest one minute.  Repeat the circuit two times."
-    ]
+    "instructions": ["Perform the first three exercise for one minute each.  Take one minute rest.  Perform the next three exercises for one minute each.  Rest one minute.  Repeat the circuit two times."]
   },
   {
-    "category": "lose",
-    "name": ["Dumbbell Hammer Curls", "Tricep Push Ups", "Kettlebell Swings"],
+        "category": "lose",
+        "name": ["Dumbell Hammer Curls", "Tricep Push Ups", "Kettlebell Swings"],
     "level": "inter",
     "muscleGroups": ["Biceps", "Triceps", "Back"],
-    "instructions": [
-      "Perform each exercise 10 times.  Rest one minute.  Repeat the circuit 5 times."
-    ]
+    "instructions": ["Perform each exercise 10 times.  Rest one minute.  Repeat the circuit 5 times."]
   },
   {
-    "category": "lose",
-    "name": [
-      "Dumbbell Squat Press",
-      "Kettlebell Sumo Squats with Upright Row",
-      "Mountain Climbers"
-    ],
+        "category": "lose",
+        "name": ["Dumbell Squat Press","Kettlebell Sumo Squats with Upright Row", "Mountain Climbers"],
     "level": "inter",
     "muscleGroups": ["Shoulders", "Legs", "Glutes"],
-    "instructions": [
-      "Perform each exercise 10 times.  Rest one minute.  Repeat the circuit 5 times."
-    ]
+    "instructions": ["Perform each exercise 10 times.  Rest one minute.  Repeat the circuit 5 times."]
   },
   {
-    "category": "lose",
-    "name": "HIIT Cardio",
+        "category": "lose",
+        "name": "HIIT Cardio",
     "level": "inter",
     "muscleGroups": ["Cardio"],
-    "instructions": [
-      "Walk for 5 minutes at an easy pace to warm up.  Run 30 seconds.  Do 15 burpees. Rest 1 minute. Repeat 10 times.  Walk at an easy pace for a 5 minute cool down."
-    ]
+    "instructions": ["Walk for 5 minutes at an easy pace to warm up.  Run 30 seconds.  Do 15 burpees. Rest 1 minute. Repeat 10 times.  Walk at an easy pace for a 5 minute cool down."]
   },
   {
-    "category": "lose",
-    "name": [
-      "Decline Push Ups",
-      "Plank",
-      "Incline Push Ups",
-      "Side Plank",
-      "Push Ups",
-      "Side Plank"
-    ],
+        "category": "lose",
+        "name": ["Decline Push Ups", "Plank", "Incline Push Ups", "Side Plank", "Push Ups", "Side Planks"],
     "level": "inter",
     "muscleGroups": ["Chest", "Abs"],
-    "instructions": [
-      "Perform 10 of each push up exercise and 45 seconds for each plank.  Rest one minute.  Repeat circuit 4 times."
-    ]
+    "instructions": ["Perform 10 of each push up exercise and 45 seconds for each plank.  Rest one minute.  Repeat circuit 4 times."]
   },
   {
-    "category": "lose",
-    "name": [
-      "Bodyweight Squats",
-      "Reverse Lunges",
-      "Squat Jumps",
-      "Crunches",
-      "Lying Leg Lifts",
-      "Plank Jump In and Outs"
-    ],
+        "category": "lose",
+    "name": ["Bodyweight Squat", "Reverse Lunges","Squat Jumps", "Crunches", "Lying Leg Lifts", "Plank Jump In and Outs"],
     "level": "adv",
     "muscleGroups": ["Abs", "Glutes", "Legs"],
-    "instructions": [
-      "Set a timer for 30 minutes.  Perform each exercise 20 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."
-    ]
+    "instructions": ["Set a timer for 30 minutes.  Perform each exercise 20 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."]
   },
   {
-    "category": "lose",
-    "name": [
-      "Tricep Dips",
-      "Push Ups",
-      "Plank Shoulder Taps",
-      "Mountain Climbers"
-    ],
+        "category": "lose",
+        "name": ["Tricep Dips", "Push Ups", "Plank Shoulder Taps", "Mountain Climbers"],
     "level": "adv",
     "muscleGroups": ["Triceps", "Shoulders", "Chest"],
-    "instructions": [
-      "Set a timer for 30 minutes.  Perform each exercise 20 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."
-    ]
+    "instructions": ["Set a timer for 30 minutes.  Perform each exercise 20 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."]
   },
   {
-    "category": "lose",
-    "name": "HIIT Cardio",
+        "category": "lose",
+        "name": "HIIT Cardio",
     "level": "adv",
     "muscleGroups": ["Cardio"],
-    "instructions": [
-      "Walk for 5 minutes at an easy pace to warm up.  Sprint 1 minute.  Walk 1 minute. Repeat 15 times.  Walk at an easy pace for a 5 minute cool down."
-    ]
+    "instructions": ["Walk for 5 minutes at an easy pace to warm up.  Sprint 1 minute.  Walk 1 minute. Repeat 15 times.  Walk at an easy pace for a 5 minute cool down."]
   },
   {
-    "category": "lose",
-    "name": [
-      "Dumbbell Curls",
-      "Bent Over Rows",
-      "High Knees",
-      "Dumbbell Wide Curls",
-      "Single Arm Rows",
-      "Butt Kickers"
-    ],
+        "category": "lose",
+        "name": ["Dumbell Curls", "Bent Over Rows", "High Knees", "Dumbell Wide Curls", "Single Arm Rows", "Butt Kickers"],
     "level": "adv",
     "muscleGroups": ["Biceps", "Back"],
-    "instructions": [
-      "Set a timer for 30 minutes.  Perform each exercise 20 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."
-    ]
+    "instructions": ["Set a timer for 30 minutes.  Perform each exercise 20 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."]
   },
   {
-    "category": "lose",
-    "name": [
-      "Bodyweight Squats",
-      "Wall Sits",
-      "Donkey Kicks",
-      "Glute Bridges",
-      "Jumping Lunges"
-    ],
+        "category": "lose",
+        "name": ["Bodyweight Squat", "Wall Sits", "Donkey Kicks", "Glute Bridges", "Jumping Lunges"],
     "level": "adv",
     "muscleGroups": ["Glutes", "Legs"],
-    "instructions": [
-      "Set a timer for 30 minutes.  Perform each exercise 20 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."
-    ]
+    "instructions": ["Set a timer for 30 minutes.  Perform each exercise 20 times.  Rest 1 minute. Complete the circuit as many times as you can until the clock runs out."]
   },
   {
-    "category": "lose",
-    "name": [
-      "Russian Twists",
-      "Plank",
-      "Reverse Crunches",
-      "Plank Jacks",
-      "Extended Crunches",
-      "Side Planks"
-    ],
+        "category": "lose",
+        "name": ["Russian Twists", "Plank", "Reverse Crunches", "Plank Jacks", "Extended Crunces", "Side Planks"],
     "level": "adv",
     "muscleGroups": ["Abs"],
-    "instructions": [
-      "Perform the first three exercise for one minute each.  Take one minute rest.  Perform the next three exercises for one minute each.  Rest one minute.  Repeat the circuit three times."
-    ]
+    "instructions": ["Perform the first three exercise for one minute each.  Take one minute rest.  Perform the next three exercises for one minute each.  Rest one minute.  Repeat the circuit three times."]
   },
   {
-    "category": "lose",
-    "name": ["Dumbbell Hammer Curls", "Tricep Push Ups", "Kettlebell Swings"],
+        "category": "lose",
+        "name": ["Dumbell Hammer Curls", "Tricep Push Ups", "Kettlebell Swings"],
     "level": "adv",
     "muscleGroups": ["Biceps", "Triceps", "Back"],
-    "instructions": [
-      "Perform each exercise 20 times.  Rest one minute.  Repeat the circuit 5 times."
-    ]
+    "instructions": ["Perform each exercise 20 times.  Rest one minute.  Repeat the circuit 5 times."]
   },
   {
-    "category": "lose",
-    "name": [
-      "Dumbbell Squat Press",
-      "Kettlebell Sumo Squats with Upright Row",
-      "Mountain Climbers"
-    ],
+        "category": "lose",
+        "name": ["Dumbell Squat Press","Kettlebell Sumo Squats with Upright Row", "Mountain Climbers"],
     "level": "adv",
     "muscleGroups": ["Shoulders", "Legs", "Glutes"],
-    "instructions": [
-      "Perform each exercise 20 times.  Rest one minute.  Repeat the circuit 5 times."
-    ]
+    "instructions": ["Perform each exercise 20 times.  Rest one minute.  Repeat the circuit 5 times."]
   },
   {
-    "category": "lose",
-    "name": "HIIT Cardio",
+        "category": "lose",
+        "name": "HIIT Cardio",
     "level": "adv",
     "muscleGroups": ["Cardio"],
-    "instructions": [
-      "Walk for 5 minutes at an easy pace to warm up.  Run 1 minute  Do 15 burpees. Rest 1 minute. Repeat 10 times.  Walk at an easy pace for a 5 minute cool down."
-    ]
+    "instructions": ["Walk for 5 minutes at an easy pace to warm up.  Run 1 minute  Do 15 burpees. Rest 1 minute. Repeat 10 times.  Walk at an easy pace for a 5 minute cool down."]
   },
   {
-    "category": "lose",
-    "name": [
-      "Decline Push Ups",
-      "Plank",
-      "Incline Push Ups",
-      "Side Plank",
-      "Push Ups",
-      "Side Plank"
-    ],
+        "category": "lose",
+        "name": ["Decline Push Ups", "Plank", "Incline Push Ups", "Side Plank", "Push Ups", "Side Planks"],
     "level": "adv",
     "muscleGroups": ["Chest", "Abs"],
-    "instructions": [
-      "Perform 15 of each push up exercise and 1 minute for each plank.  Rest one minute.  Repeat circuit 5 times."
-    ]
+    "instructions": ["Perform 15 of each push up exercise and 1 minute for each plank.  Rest one minute.  Repeat circuit 5 times."]
+
   }
 ]
