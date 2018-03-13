@@ -1,5 +1,6 @@
 [
   {
+<<<<<<< HEAD
 		"category": "lose",
     "name": ["Bodyweight Squats", "Reverse Lunges", "Squat Jumps", "Crunches", "Lying Leg Lifts", "Plank Jump In and Outs"],
     "level": "beg",
@@ -208,5 +209,338 @@
     "level": "adv",
     "muscleGroups": ["Chest", "Abs"],
     "instructions": ["Perform 15 of each push up exercise and 1 minute for each plank.  Rest one minute.  Repeat circuit 5 times."]
+=======
+    "category": "Lose",
+    "name": "Workout 1",
+    "level": "Beginner",
+    "muscleGroups": ["Abs", " Butt/Hips", " Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Abdominal Crunch - 20 reps",
+			"Bent Knee Push-up - 20 reps",
+			"Forward Linear Jumps - 15 reps",
+			"Standing Calf Raise - 25 reps, each leg"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 2",
+    "level": "Beginner",
+    "muscleGroups": ["Chest", "Shoulders"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 3",
+    "level": "Beginner",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 4",
+    "level": "Beginner",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 5",
+    "level": "Beginner",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 6",
+    "level": "Beginner",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 7",
+    "level": "Beginner",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 8",
+    "level": "Beginner",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 9",
+    "level": "Beginner",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 10",
+    "level": "Beginner",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 1",
+    "level": "Intermediate",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 2",
+    "level": "Intermediate",
+    "muscleGroups": ["Chest", "Shoulders"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 3",
+    "level": "Intermediate",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 4",
+    "level": "Intermediate",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 5",
+    "level": "Intermediate",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 6",
+    "level": "Intermediate",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 7",
+    "level": "Intermediate",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 8",
+    "level": "Intermediate",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 9",
+    "level": "Intermediate",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 10",
+    "level": "Intermediate",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 1",
+    "level": "inter",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 2",
+    "level": "Advanced",
+    "muscleGroups": ["Chest", "Shoulders"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 3",
+    "level": "Advanced",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 4",
+    "level": "Advanced",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 5",
+    "level": "Advanced",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 6",
+    "level": "Advanced",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 7",
+    "level": "Advanced",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 8",
+    "level": "Advanced",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 9",
+    "level": "Advanced",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+  },
+  {
+    "category": "Lose",
+    "name": "Workout 10",
+    "level": "Advanced",
+    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "instructions": [
+      "Four Rounds of the following:",
+      "Body Squats - 20 reps",
+      "Good Mornings - 20 reps"
+    ]
+>>>>>>> refs/remotes/origin/amy.bootcamp
   }
 ]

@@ -1,3 +1,4 @@
+// api key...
 var config = {
   apiKey: "AIzaSyBYfKRi1L1Bx3HjDzdPSzm22XIOssPbh-Y",
   authDomain: "code-red-bootcamp.firebaseapp.com",
@@ -6,18 +7,16 @@ var config = {
   storageBucket: "code-red-bootcamp.appspot.com",
   messagingSenderId: "926767366245"
 };
-
+// initialize firebase...
 firebase.initializeApp(config);
-
 var database = firebase.database();
-
 var firstName;
 var lastName;
 var dateOfBirth;
 var email;
 var userName;
 var password;
-
+//clear index fields
 function clearField() {
   $("#first_name").val("");
   $("#last_name").val("");
@@ -28,6 +27,8 @@ function clearField() {
 }
 
 $("#submit2").on("click", function(event) {
+
+
   event.preventDefault();
   firstName = $("#first_name")
     .val()
@@ -47,20 +48,23 @@ $("#submit2").on("click", function(event) {
   password = $("#password")
     .val()
     .trim();
-
   var newMember = {
     firstName: firstName,
     lastName: lastName,
     dateOfBirth: dateOfBirth,
     email: email,
     userName: userName,
-    password: password
+    password: assword
   };
   database.ref().push(newMember);
   console.log(newMember);
   clearField();
 });
-
+//get info onto dashboard//
+database.ref().on("child_added", function(snapShot) {
+  var data = snapShot.val();
+  var userName = $("<td>").text(data.userName);
+});
 var questions = [
   {
     question: "Describe your current level of activity.",
@@ -87,7 +91,6 @@ var questions = [
     choice: ["2-3", "3-4", "5-6"]
   }
 ];
-
 var currentQuestion = 0;
 var quizOver = false;
 var wgerURL =
@@ -101,15 +104,12 @@ $(document).ready(function() {
     var questionClass = $(document).find(".quizContainer > .question");
     var choiceList = $(document).find(".quizContainer > .choiceList");
     var numChoices = questions[currentQuestion].choices.length;
-
     // Set the questionClass text to the current question
     $(".question").text(question);
-
     // Remove all current <li> elements (if any)
     $(".choiceList")
       .find("li")
       .remove();
-
     var choice;
     for (i = 0; i < numChoices; i++) {
       choice = questions[currentQuestion].choices[i];
@@ -122,7 +122,6 @@ $(document).ready(function() {
       ).appendTo(".choiceList");
     }
   }
-
   displayCurrentQuestion();
   $(this)
     .find("nextButton")
@@ -143,11 +142,26 @@ $(document).ready(function() {
       }
     });
 });
-
 //
+var $workoutsLoseWeight = $("#workoutsLoseWeight");
+
 $.ajax({
   method: "GET",
-  url: "assets/json/loseWeight.json"
-}).then(function(response) {
-  console.log(response);
+  url: "assets/json/loseWeight.json",
+  success: function(data) {
+    var results = data;
+    console.log(data);
+    for (var i = 0; i < results.length; i++) {
+      var workoutName = results[i].name;
+			var paraName = $("<h3 class='para-workout'>").text(workoutName);
+			var groups = results[i].muscleGroups;
+      var paraMuscleGroups = $("<h4 class='para-muscleGroups'>").text(groups);
+      var workoutInstructions = results[i].instructions;
+      var paraWorkoutInstructions = $("<p>").text(workoutInstructions);
+      $workoutsLoseWeight
+        .append(paraName)
+        .append(paraMuscleGroups)
+        .append(paraWorkoutInstructions);
+    }
+  }
 });
