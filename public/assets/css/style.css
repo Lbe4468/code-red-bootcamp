@@ -10,6 +10,19 @@ h1 {
 	font-size: 5em;
 	font-style: strong;
 }
+button, input, optgroup, select, textarea{
+	color: hsl(0, 63%, 40%);
+}
+a:active,
+a:hover {
+	color: hsl(0, 63%, 40%);
+}
+
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+	border-bottom: hsl(0, 63%, 40%);
+	box-shadow: hsl(0, 63%, 40%);
+	color: hsl(0, 63%, 40%);
+}
 
 nav ul a,
 nav .brand-logo {
@@ -21,7 +34,7 @@ p {
 }
 
 .button-collapse {
-  color: #26a69a;
+  color: hsl(0, 63%, 40%)
 }
 
 .parallax-container {
@@ -68,12 +81,12 @@ footer.page-footer {
 #workoutsRow {
 	text-align: center;
 	margin-top: 1em;
-	color: red;
+	color: hsl(0, 63%, 40%);
 	font-size: 3em;
 }
 
 h1 {
-	color: red;
+	color: hsl(0, 63%, 40%);
 	text-align: center;
 }
 
