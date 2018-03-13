@@ -12,7 +12,6 @@ $(function() {
 	
 // when the document loads...
 $(document).ready(function () {
-
 var questions = [
     {
       question: "How many days a week do you hit the gym?",
@@ -301,6 +300,7 @@ var questions = [
   });
 
 
+// f1267f980e7340bc6c3c88af57222deea7b14854
 	// buildApiRequest('GET',
 	// '/youtube/v3/search',
 	// {'maxResults': '5',
@@ -370,9 +370,33 @@ var questions = [
 // 		});
 // // 	}
 // ).appendTo('body');
-});
-
 
 });
 
+});
+
+// Event to trigger file select to upload profile picture to firebase
+$("#profile-image").on("click", function() {
+	// event to activate/show image file selection/upload
+	$("#file-input").trigger("click");
+	// Upon file being selected...
+  $("input:file").change(function(e) {
+    var file = e.target.files[0];
+    // Get current username from Firebase
+    var user = firebase.auth().currentUser;
+    // Create a Storage Ref w/ username
+    var storageRef = firebase
+      .storage()
+      .ref(user + "/profilePicture/" + file.name);
+    // Upload file to Firebase 
+    var task = storageRef.put(file);
+    var name = file.name;
+    var size = file.size;
+    var type = file.type;
+    console.log(file);
+    console.log(name);
+    console.log(size);
+    console.log(type);
+  });
+});
 
