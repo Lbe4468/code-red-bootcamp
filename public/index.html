@@ -7,11 +7,9 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Code Red Bootcamp</title>
 	<!-- Compiled and minified CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link rel="stylesheet" href="assets\css\materialize.css">
 	<!-- Compiled and minified JavaScript -->
 	<link rel="stylesheet" href="assets/css/style.css">
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 </head>
 
 <body>
@@ -25,10 +23,13 @@
 					<a href="dashboard.html">Dashboard</a>
 				</li>
 				<li>
-					<a href="#">Demos</a>
+					<a href="index.html" btn class="btnLogOut" id="quick-start-log-out">Log Out</a>
 				</li>
 				<li>
-					<a href="#">MyFitnessPal</a>
+					<a href="demos.html">Demos</a>
+				</li>
+				<li>
+					<a href="https://www.myfitnesspal.com/account/login">MyFitnessPal</a>
 				</li>
 			</ul>
 			<ul id="nav-mobile" class="side-nav">
@@ -36,14 +37,14 @@
 					<a href="dashboard.html">Dashboard</a>
 				</li>
 				<li>
-					<a href="#">Demos</a>
+					<a href="demos.html">Demos</a>
 				</li>
 				<li>
-					<a href="#">MyFitnessPal</a>
+					<a href="https://www.myfitnesspal.com/account/login">MyFitnessPal</a>
 				</li>
 			</ul>
 			<a href="#" data-activates="nav-mobile" class="button-collapse">
-				<i class="material-icons">menu</i>
+				<p class="material-icons">MENU</p>
 			</a>
 		</div>
 	</nav>
@@ -53,8 +54,8 @@
 				<br>
 				<br>
 				<h1 class="header center red-text">Welcome to Code Red Bootcamp</h1>
-				<div class="row center">
-					<h5 class="header col s12 light">A modern way to up your workout routine</h5>
+				<div class="row right">
+					<h5 class="header col s12 light ">A modern way to up your workout routine</h5>
 				</div>
 				<br>
 				<br>
@@ -64,8 +65,10 @@
 			<img src="https://tse3.mm.bing.net/th?id=OIP.bFA_io9ay1oWMFUDxgSLOQHaD5&pid=15.1&P=0&w=324&h=171" alt="Unsplashed background img 1">
 		</div>
 	</div>
+
 	<div class="container icon">
 		<div class="row">
+<<<<<<< HEAD
 			<div class="col m6 push-m7">
 				<form>
 					<div class="row">
@@ -130,7 +133,58 @@
 			</form>
 		</div>
 
+=======
+			<div class="col s6">
+				<form>
+					<h4>Create Account</h4>
+					<div class="input-field">
+						<input id="first_name" type="text" class="validate">
+						<label for="first_name">First Name</label>
+					</div>
+					<div class="input-field">
+						<input id="last_name" type="text" class="validate">
+						<label for="last_name">Last Name</label>
+					</div>
+					<div class="input-field">
+						<input id="date_of_birth" type="date" class="validate">
+						<label for="date_of_birth" class="active">Date of Birth</label>
+					</div>
+					<div class="input-field">
+						<input id="username" type="text" class="validate">
+						<label for="username">Username</label>
+					</div>
+					<div class="input-field">
+						<input id="signEmail" type="email" class="validate">
+						<label for="email">Email</label>
+					</div>
+					<div class="input-field">
+						<input id="signPassword" type="password" class="validate">
+						<label for="password">Password</label>
+					</div>
+					<!-- <button id="submit2" class="btn waves-effect waves-light red" type="submit" name="action">Submit</button> -->
+					<button class="mdl-button mdl-js-button btn waves-effect waves-light red" id="quick-start-sign-up" name="signup">Sign Up</button>
+					&nbsp;&nbsp;&nbsp;
+			</div>
+			</form>
+			<div class="col s6">
+				<form>
+					<h4>Account Login</h4>
+					<div class="input-field">
+						<input id="loginEmail" type="text" class="validate">
+						<label for="email">Email</label>
+					</div>
+					<div class="input-field">
+						<input id="loginPassword" type="password" class="validate">
+						<label for="password">Password</label>
+					</div>
+					<button class="mdl-button mdl-js-button btn waves-effect waves-light red" id="quick-start-sign-in" name="signin">Sign In</button>
+					&nbsp;&nbsp;&nbsp;
+			</div>
+			</form>
+		</div>
+>>>>>>> master
 	</div>
+
 	<div class="parallax-container valign-wrapper">
 		<div class="section no-pad-bot">
 			<div class="container">
@@ -143,30 +197,49 @@
 			 alt="Unsplashed background img 2">
 		</div>
 	</div>
-	<div class="container">
+
+	<div class="container icon">
 		<div class="section">
+
+			<!--   Icon Section   -->
 			<div class="row">
-				<div class="col s12 center">
-					<h3>
-						<i class="mdi-content-send red-text"></i>
-					</h3>
-					<p class="left-align light"></p>
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center red-text">
+							<i class="header">Dashboard</i>
+						</h2>
+						<h5 class="center">Create Your Routine</h5>
+
+						<p class="light">We did most of the heavy lifting for you to provide an easy questionairre to create a personalized workout routine.</p>
+					</div>
 				</div>
-			</div>
-			<div class="row center">
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center red-text">
+							<i class="header">Demos</i>
+						</h2>
+						<h5 class="center">See step by step demos.</h5>
+						<p class="light">Confused by a particular move or just want to workout a musclegroup in a different way? Check out our demos to increase
+							your efficiency and see your results even faster.</p>
+					</div>
+				</div>
+				<div class="col s12 m4">
+					<div class="icon-block">
+						<h2 class="center red-text">
+							<i class="header">MyFitnessPal</i>
+						</h2>
+						<h5 class="center">Connect your progress</h5>
+						<p class="light">By utilizing elements and principles of MyFitnesPal, we were able to create functionality to get the most of your workout
+							anad nutrition plan. Update your workouts to MyFitnessPal to create a total wellness plan</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
+
 	<div class="parallax-container valign-wrapper">
-		<div class="section no-pad-bot">
-			<div class="container">
-				<div class="row center">
-					<h5 class="header col s12 light">Don't Wish For It, Work For It!</h5>
-				</div>
-			</div>
-		</div>
 		<div class="parallax">
-			<img src="https://tse4.mm.bing.net/th?id=OIP.2ff3q27mJh7-68vo7dNvuAHaDW&pid=15.1&P=0&w=443&h=202" alt="Unsplashed background img 3">
+			<img src="assets\images\background3.jpeg" alt="Unsplashed background img 3">
 		</div>
 	</div>
 	<footer class="page-footer red">
@@ -177,23 +250,6 @@
 					<p class="grey-text text-lighten-4">We are a passionate team of collaborators that want ot help people spark their energy to pursue their passions.</p>
 				</div>
 				<div class="col l3 s12">
-					<h5 class="white-text">Settings</h5>
-					<ul>
-						<li>
-							<a class="white-text" href="#!">Link 1</a>
-						</li>
-						<li>
-							<a class="white-text" href="#!">Link 2</a>
-						</li>
-						<li>
-							<a class="white-text" href="#!">Link 3</a>
-						</li>
-						<li>
-							<a class="white-text" href="#!">Link 4</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col l3 s12">
 					<h5 class="white-text">Connect</h5>
 					<ul>
 						<li>
@@ -201,9 +257,6 @@
 						</li>
 						<li>
 							<a class="white-text" href="#!">Amy Harris</a>
-						</li>
-						<li>
-							<a class="white-text" href="#!">Stephen Lee</a>
 						</li>
 						<li>
 							<a class="white-text" href="#!">April Wilson</a>
@@ -221,8 +274,14 @@
 	</footer>
 	<!--  Scripts-->
 	<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-messaging.js"></script>
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="assets/js/materialize.js"></script>
+	<script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
 	<script src="assets/js/init.js"></script>
 	<script src="assets/js/app.js"></script>
 </body>
