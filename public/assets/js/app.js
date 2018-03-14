@@ -99,7 +99,11 @@ var questions = [
     };
     database.ref().push(newMember);
     console.log(newMember);
-    clearField();
+		clearField();
+		var url = 'question.html';
+   //Redirects
+   window.location.href = url;
+   return false;
   });
 
   const signUp = document.getElementById("quick-start-sign-up");
@@ -149,7 +153,11 @@ var questions = [
     //if user will log in
     const promise = auth.signInWithEmailAndPassword(email, password);
     //if not user will console log error
-    promise.catch(e => console.log(e.message));
+		promise.catch(e => console.log(e.message));
+		var url = 'dashboard.html';
+		//Redirects
+		window.location.href = url;
+		return false;
   });
 
   //get info onto dashboard//
@@ -157,6 +165,53 @@ var questions = [
     var data = snapShot.val();
     var userName = $("<td>").text(data.userName);
   });
+
+
+//search for demos.....
+$('#search-button').on('click', function () {
+	var videoQuery = $('#video-query').val()
+	console.log(videoQuery)
+	// var url = 'http://youtube.com/feeds/api/videos?q=' + encodeURIComponent(videoQuery) + '&format=5&max-results=1&v=2&alt=jsonc';
+	var key = 'AIzaSyB8BIrxlYTGOzYv-anjVJHLL8pH1CSSE6g';
+	var url = 'https://content.googleapis.com/youtube/v3/search?q=' + videoQuery + '&maxResults=3&part=snippet&key=' + key;
+
+	$.ajax({
+		method: "GET",
+		url: url
+	}).then(function (response) {
+		console.log(response);
+		console.log(this);
+		$('#search-container').empty();
+	var	responseData = response.data;
+		if (responseData.data.items) {
+			var videos = responseData.data.items;
+			videoid = videos[0].id;
+			alert(videoid);
+			return videoid;
+		}
+	});
+	// request.execute(function(response) {
+  //   var str = JSON.stringify(response.result);
+  //   $('#search-container').html('<pre>' + str + '</pre>');
+//   // });
+// }
+// $('<iframe />', {
+// 	src: "https://www.youtube.com/watch?v",
+// 	id:  'receiver',
+// 	frameborder: 1,
+// 	load:function(){
+
+// 		request.execute(function(response) {
+
+// 			var str = JSON.stringify(response.result);
+// 			$('#search-container').html('<pre>' + str + '</pre>');
+// 		});
+// 	}
+// ).appendTo('body');
+// });
+
+
+
 
   //creating variables for call to JSON
   var memberAnswers = {
@@ -211,11 +266,6 @@ var questions = [
     }
   });
 
-<<<<<<< HEAD
-	// initialize firebase..
- 	firebase.initializeApp(config);
-
-
 	// //password username authentication ect.
 const txtEmail = document.getElementById ("email");
 const txtPassword = document.getElementById("password");
@@ -265,7 +315,6 @@ auth.onAuthStateChanged(firebaseUser => {
 		console.log('Not logged in');
 	}
 });
-=======
   // ajax call to pull workouts to page....
   // var $workoutsLoseWeight = $("#workoutsLoseWeight");
   // $.ajax({
@@ -353,83 +402,12 @@ auth.onAuthStateChanged(firebaseUser => {
       console.log(type);
     });
   });
->>>>>>> 84c261012d9e79c0a04905f022a4e02fed20e50e
-
-
-// f1267f980e7340bc6c3c88af57222deea7b14854
-	// buildApiRequest('GET',
-	// '/youtube/v3/search',
-	// {'maxResults': '5',
-	//  'part': 'snippet',
-	//  'q': 'surfing',
-	//  'type': ''});
-
-
-// //google api information
-// var google = {
-// 	apiKey: "53c434b55c046b2715268b5b2c9b75505fefb822",
-// 	authDomain: "code-red-bootcamp@project-670e0.iam.gserviceaccount.com",
-// 	databaseURL: "https://console.developers.google.com/iam-admin/serviceaccounts/project?project=project-670e0",
-// 	projectId: "project-670e0",
-// 	storageBucket: "",
-// 	messagingSenderId: ""
-// };
 
 
 
-// 	//get demonstrations on demo page...
-// 		// call api to page
-// 		function search() {
-// 	var gapiClient = $.ajax({
-// 		method: "GET",
-// 		url:"code-red-bootcamp@project-670e0.iam.gserviceaccount.com"
-// 	});
-//   var q = $('#query').val();
-//   var request = gapiClient.youtube.search.list({
-//     q: q,
-//     part: 'snippet'
-//   });
 
 
 
-// // After the API loads, call a function to enable the search box.
-// function handleAPILoaded() {
-// 	console.log("hi")
-//   $('#search-button').attr('disabled', false);
-// }
-// function makeRequest() {
-// 	var request = gapi.client.urlshortener.url.get({
-// 		'shortUrl': 'code-red-bootcamp@project-670e0.iam.gserviceaccount.com'
-// 	});
-// 	request.then(function(response) {
-// 		appendResults(response.result.longUrl);
-// 	}, function(reason) {
-// 		console.log('Error: ' + reason.result.error.message);
-// 	});
-// }
-
-// function init() {
-// 	gapi.client.setApiKey('53c434b55c046b2715268b5b2c9b75505fefb822');
-// 	gapi.client.load('urlshortener', 'v1').then(makeRequest);
-// }
-
-// $('<iframe />', {
-// 	src: url,
-// 	id:  'receiver',
-// 	frameborder: 1,
-// 	load:function(){
-
-// 		request.execute(function(response) {
-		
-// 			var str = JSON.stringify(response.result);
-// 			$('#search-container').html('<pre>' + str + '</pre>');
-// 		});
-// // 	}
-// ).appendTo('body');
-
-});
-
-});
 
 // Event to trigger file select to upload profile picture to firebase
 $("#profile-image").on("click", function() {
@@ -455,4 +433,7 @@ $("#profile-image").on("click", function() {
     console.log(type);
   });
 });
+});
 
+});
+});
