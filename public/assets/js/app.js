@@ -211,6 +211,61 @@ var questions = [
     }
   });
 
+<<<<<<< HEAD
+	// initialize firebase..
+ 	firebase.initializeApp(config);
+
+
+	// //password username authentication ect.
+const txtEmail = document.getElementById ("email");
+const txtPassword = document.getElementById("password");
+const signUp = document.getElementById("quickstart-sign-up");
+const login = document.getElementById("quickstart-sign-in")
+const logout = document.getElementById("quickstart-log-out")
+//when sign in button is clicked this event function happens
+$("#quickstart-sign-in").on("click", e =>{
+	//get email and password from user
+const email = txtEmail.value;
+const password = txtPassword.value;
+//authenticate from firebase
+const auth = firebase.auth();
+//if user will log in
+const promise = auth.signInWithEmailAndPassword(email, password);
+$('	<a href="dashboard.html"></a>')
+//if not user will console log error
+promise.catch(e => console.log(e.message));
+
+});
+//add signup event
+//when sign up button is clicked this event function happens
+$("#quickstart-sign-up").on("click", e =>{
+	//get email and password from user
+	//TODO: Check for real emails
+const email = txtEmail.value;
+const password = txtPassword.value;
+//authenticate from firebase
+const auth = firebase.auth();
+//create user and log in
+const promise = auth.creatUserWithEmailAndPassword(email, password);
+// will console log error
+promise.catch(e => console.log(e.message));
+$('	<a href="question.html"></a>')
+});
+//add authentication listener
+firebase.auth.onAuthStateChanged(firebaseUser => {});
+//logout
+$("#quickstart-log-out").on("click", e=> {
+	firebase.auth().signOut();
+});
+//if the state of login is changed console log either user or not loggid in
+auth.onAuthStateChanged(firebaseUser => {
+	if(firebaseUser){
+		console.log(firebaseUser);
+	}else{
+		console.log('Not logged in');
+	}
+});
+=======
   // ajax call to pull workouts to page....
   // var $workoutsLoseWeight = $("#workoutsLoseWeight");
   // $.ajax({
@@ -298,6 +353,7 @@ var questions = [
       console.log(type);
     });
   });
+>>>>>>> 84c261012d9e79c0a04905f022a4e02fed20e50e
 
 
 // f1267f980e7340bc6c3c88af57222deea7b14854
