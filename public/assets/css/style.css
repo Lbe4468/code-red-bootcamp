@@ -5,10 +5,20 @@
  *
  * Made By MaterializeCSS.com
  */
-
+form{
+	border: 2px solid hsl(0, 63%, 40%);
+	margin: 1%;
+	padding: 1%;
+}
+#quick-start-sign-in, #quick-start-sign-up {
+	background-color: hsl(0, 63%, 40%);
+}
 h1 {
 	font-size: 5em;
 	font-style: strong;
+}
+.header{
+	color: hsl(0, 63%, 40%);
 }
 button, input, optgroup, select, textarea{
 	color: hsl(0, 63%, 40%);
@@ -114,4 +124,10 @@ h1, h4 {
 li {
 	color:hsl(0, 63%, 40%);
 	font-size: 2em;
+}
+footer{
+	background-color: hsl(0, 6%, 25%);
+}
+.page-footer{
+	background-color: hsl(0, 63%, 40%);
 }
