@@ -5,17 +5,52 @@
  *
  * Made By MaterializeCSS.com
  */
-form{
-	border: 2px solid hsl(0, 63%, 40%);
-	margin: 1%;
-	padding: 1%;
+
+form {
+  border: 2px solid hsl(0, 63%, 40%);
+  margin: 1%;
+  padding: 1%;
 }
-#quick-start-sign-in, #quick-start-sign-up {
-	background-color: hsl(0, 63%, 40%);
+#quick-start-sign-in,
+#quick-start-sign-up {
+  background-color: hsl(0, 63%, 40%);
+
 }
 h1 {
-	font-size: 5em;
-	font-style: strong;
+  font-size: 5em;
+  font-style: strong;
+}
+.header {
+  color: hsl(0, 63%, 40%);
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: hsl(0, 63%, 40%);
+}
+a:active,
+a:hover {
+  color: hsl(0, 63%, 40%);
+}
+
+input:not([type]),
+input[type="text"]:not(.browser-default),
+input[type="password"]:not(.browser-default),
+input[type="email"]:not(.browser-default),
+input[type="url"]:not(.browser-default),
+input[type="time"]:not(.browser-default),
+input[type="date"]:not(.browser-default),
+input[type="datetime"]:not(.browser-default),
+input[type="datetime-local"]:not(.browser-default),
+input[type="tel"]:not(.browser-default),
+input[type="number"]:not(.browser-default),
+input[type="search"]:not(.browser-default),
+textarea.materialize-textarea {
+  border-bottom: hsl(0, 63%, 40%);
+  box-shadow: hsl(0, 63%, 40%);
+  color: hsl(0, 63%, 40%);
 }
 .header{
 	color: hsl(0, 63%, 40%);
@@ -44,20 +79,22 @@ p {
 }
 
 .button-collapse {
-  color: hsl(0, 63%, 40%)
+
+  color: hsl(0, 63%, 40%);
+
 }
 
 .parallax-container {
   min-height: 380px;
   line-height: 0;
   height: auto;
-  color: rgba(255,255,255,.9);
+  color: rgba(255, 255, 255, 0.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+.parallax-container .section {
+  width: 100%;
+}
 
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width: 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
@@ -67,7 +104,7 @@ p {
   }
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width: 600px) {
   #index-banner .section {
     top: 0;
   }
@@ -81,53 +118,107 @@ p {
 }
 
 footer.page-footer {
-	margin: 0;
+  margin: 0;
 }
 
-.nav-wrapper{
-	color: #333;
+.nav-wrapper {
+  color: #333;
 }
 
 #workoutsRow {
-	text-align: center;
-	margin-top: 1em;
-	color: hsl(0, 63%, 40%);
-	font-size: 3em;
+
+  text-align: center;
+  margin-top: 1em;
+  color: hsl(0, 63%, 40%);
+  font-size: 3em;
 }
 
-h1, h4 {
-	color: hsl(0, 63%, 40%);
+h4 {
+  color: hsl(0, 63%, 40%);
 
-	text-align: center;
+  text-align: center;
+
 }
 
 #dashboardHeader {
-	margin-top: 1.75em;
+	margin-top: 1.25em;
+	font-size: 6.5em;
+	color:hsl(0, 63%, 40%);
 }
 
 #userPic {
-	text-align: center;
+  text-align: center;
 }
 
 #userInfo {
 	text-align: center;
+	color: hsl(0, 6%, 25%);
+	font-size: 1.5em;
 }
 
 #profile-image {
-	margin-top: 1em;
+  margin-top: 1em;
 }
 
 #clickToUpdate {
-	color: hsl(0, 63%, 40%);
+
+  color: hsl(0, 63%, 40%);
 }
 
 li {
-	color:hsl(0, 63%, 40%);
-	font-size: 2em;
+  color: hsl(0, 6%, 25%);
+	font-size: 1.5em;
 }
-footer{
-	background-color: hsl(0, 6%, 25%);
+
+footer {
+  background-color: hsl(0, 6%, 25%);
 }
-.page-footer{
+
+.page-footer {
+  background-color: hsl(0, 63%, 40%);
+}
+
+#profileInfo {
+	color: hsl(0, 63%, 40%);
+	border-bottom: 	hsl(0, 63%, 40%) solid 4px;
+	border-bottom-width: 15px;
+}
+
+#profileWorkouts {
+	color: hsl(0, 63%, 40%);
+	border-bottom: 	hsl(0, 63%, 40%) solid 4px;
+	border-bottom-width: 15px;
+}
+
+#rowsAndRowsAndRows {
+	margin-left: 5%;
+	margin-right: 7.5%;
+}
+
+#rowsAndRowsAnd {
+	margin-left: 5%;
+}
+
+#rowsAndRows {
+	margin-left: 10%;
+}
+
+h5 {
+	margin-top: 1.5em;
+	background-color: hsl(0, 63%, 40%);
+	color: lightgray;
+}
+
+h6 {
+	font-size: 2.5em;
+}
+
+#video-query {
+	width: 20%;
+	border: solid 1px hsl(0, 63%, 40%); 
+}
+
+#search-button {
 	background-color: hsl(0, 63%, 40%);
 }
+
