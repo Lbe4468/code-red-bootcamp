@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Code Red Bootcamp</title>
 	<!-- Compiled and minified CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link rel="stylesheet" href="assets\css\materialize.css">
 	<!-- Compiled and minified JavaScript -->
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -16,7 +16,7 @@
 	<nav class="black" role="navigation">
 		<div class="nav-wrapper container">
 			<a id="logo-container" href="index.html" class="brand-logo">
-				<img src="https://tse1.mm.bing.net/th?id=OIP.ssIg8j9mVw7t9xF7U42sHwHaCl&pid=15.1&P=0&w=235&h=65">
+				<img src="https://tse1.mm.bing.net/th?id=OIP.ssIg8j9mVw7t9xF7U42sHwHaCl&pid=15.1&P=0&w=225&h=65">
 			</a>
 			<ul class="right hide-on-med-and-down" id="navMenu">
 				<li>
@@ -54,8 +54,8 @@
 				<br>
 				<br>
 				<h1 class="header center red-text">Welcome to Code Red Bootcamp</h1>
-				<div class="row center">
-					<h5 class="header col s12 light">A modern way to up your workout routine</h5>
+				<div class="row right">
+					<h6 class="header col s12 light ">A modern way to up your workout routine</h6>
 				</div>
 				<br>
 				<br>
@@ -96,7 +96,9 @@
 						<label for="password">Password</label>
 					</div>
 					<!-- <button id="submit2" class="btn waves-effect waves-light red" type="submit" name="action">Submit</button> -->
-					<button class="mdl-button mdl-js-button btn waves-effect waves-light red" id="quick-start-sign-up" name="signup">Sign Up</button>
+					<a href="questions.html">
+						<button class="mdl-button mdl-js-button btn waves-effect waves" id="quick-start-sign-up" name="signup">Sign Up</button>
+					</a>
 					&nbsp;&nbsp;&nbsp;
 			</div>
 			</form>
@@ -111,7 +113,9 @@
 						<input id="loginPassword" type="password" class="validate">
 						<label for="password">Password</label>
 					</div>
-					<button class="mdl-button mdl-js-button btn waves-effect waves-light red" id="quick-start-sign-in" name="signin">Sign In</button>
+					<a href="#" onclick="someFunc()">
+						<button class="mdl-button mdl-js-button btn waves-effect waves" id="quick-start-sign-in" name="signin">Sign In</button>
+					</a>
 					&nbsp;&nbsp;&nbsp;
 			</div>
 			</form>
@@ -175,12 +179,15 @@
 			<img src="assets\images\background3.jpeg" alt="Unsplashed background img 3">
 		</div>
 	</div>
-	<footer class="page-footer red">
+
+	<footer class="page-footer">
 		<div class="container">
 			<div class="row">
 				<div class="col l6 s12">
 					<h5 class="white-text">Team Bio</h5>
 					<p class="grey-text text-lighten-4">We are a passionate team of collaborators that want ot help people spark their energy to pursue their passions.</p>
+
+
 				</div>
 				<div class="col l3 s12">
 					<h5 class="white-text">Connect</h5>
@@ -199,25 +206,26 @@
 			</div>
 		</div>
 		<div class="footer-copyright">
-			<div class="container">
+			<div class="container footer center">
 				Created by
-				<a class="burgandy-text text-lighten-3" href="index.html">Team Code Red</a>
+				<a class="white-text " href="index.html"> Code Red Team</a>
 			</div>
 		</div>
 	</footer>
+
 	<!--  Scripts-->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-auth.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-database.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-firestore.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase-messaging.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.10.1/firebase-messaging.js"></script>
+	<script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="assets/js/materialize.js"></script>
-	<script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
 	<script src="assets/js/init.js"></script>
 	<script src="assets/js/app.js"></script>
+	
 </body>
 
 </html>
