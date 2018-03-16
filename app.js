@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
-
+const keys = require('./public/assets/json/client_secret.json');
+const private_key = keys.private_key;
+console.log(private_key);
 app.use(express.static('public'));
 
 app.listen(3000, () => {
