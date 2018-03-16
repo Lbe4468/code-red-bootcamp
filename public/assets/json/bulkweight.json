@@ -1,332 +1,518 @@
 [
   {
-    "category": "Bulk",
-    "name": "Workout 1",
-    "level": "Beginner",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "bulk",
+    "name": [
+      "Barbell Back Squats",
+      "Barbell Reverse Lunges",
+      "Deadlifts",
+      "Cable Kickbacks"
+    ],
+    "level": "beg",
+    "muscleGroups": [
+      "Glutes",
+      "Legs"
+    ],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform 10 reps each exercise.  Repeat 3 times."
     ]
   },
   {
-    "category": "Bulk",
-    "name": "Workout 2",
-    "level": "Beginner",
-    "muscleGroups": ["Chest", "Shoulders"],
+    "category": "bulk",
+    "name": [
+      "Dumbbell Overhead Extension",
+      "Push Ups",
+      "Dumbbell Shoulder Press",
+      "Tricep Kickbacks",
+      "Dumbbell Chest Flies",
+      "Lateral Raises",
+      "Tricep Dips",
+      "Dumbbell Chest Press",
+      "Dumbbell Front Raises"
+    ],
+    "level": "beg",
+    "muscleGroups": [
+      "Triceps",
+      "Shoulders",
+      "Chest"
+    ],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform 10 reps each of the first three exercises as a superset.  Rest 1 minute.  Repeat 3 times. Repeat for the next three exercises."
     ]
   },
   {
-    "category": "Bulk",
-    "name": "Workout 3",
-    "level": "Beginner",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "bulk",
+    "name": "Cardio",
+    "level": "beg",
+    "muscleGroups": [
+      "Cardio"
+    ],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Walk for 5 minutes at an easy pace to warm up.  Walk at an incline of 15, speed 2.0 for 30 minutes.  Walk at an easy pace for a 5 minute cool down."
     ]
   },
   {
-    "category": "Bulk",
-    "name": "Workout 4",
-    "level": "Beginner",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "bulk",
+    "name": [
+      "Dumbbell Russian Twists",
+      "Dumbbell Cross Body Toe Touches",
+      "Plank",
+      "Side Planks"
+    ],
+    "level": "beg",
+    "muscleGroups": [
+      "Abs"
+    ],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform 10 reps each exercise.  Repeat 3 times."
     ]
   },
   {
-    "category": "Bulk",
-    "name": "Workout 5",
-    "level": "Beginner",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "bulk",
+    "name": [
+      "Dumbbell Curls",
+      "Barbell Bent Over Rows",
+      "Barbell Wide Curls",
+      "Dumbbell Single Arm Rows",
+      "Cable Hammer Curls",
+      "Seated Cable Row"
+    ],
+    "level": "beg",
+    "muscleGroups": [
+      "Biceps",
+      "Back"
+    ],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform 10 reps each of the first two exercises as a superset.  Rest 1 minute.  Repeat 3 times. Repeat for the next set of exercises."
     ]
   },
   {
-    "category": "Bulk",
-    "name": "Workout 6",
-    "level": "Beginner",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "bulk",
+    "name": [
+      "Cable Crunches",
+      "Cable Pull Throughs",
+      "Dumbbell Donkey Kicks",
+      "Barbell Glute Bridges",
+      "Weighted Lying Leg Lifts"
+    ],
+    "level": "beg",
+    "muscleGroups": [
+      "Glutes",
+      "Legs",
+      "Abs"
+    ],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform 10 reps each exercise.  Repeat 3 times."
     ]
   },
   {
-    "category": "Bulk",
-    "name": "Workout 7",
-    "level": "Beginner",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "bulk",
+    "name": [
+      "Dumbbell Hammer Curls",
+      "Barbell Close Grip Press",
+      "Renegade Row",
+      "Dumbbell Concentration Curls",
+      "Barbell Overhead Extensions",
+      "Dumbbell Pullovers"
+    ],
+    "level": "beg",
+    "muscleGroups": [
+      "Biceps",
+      "Triceps",
+      "Back"
+    ],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform 10 reps each of the first three exercises as a superset.  Rest 1 minute.  Repeat 3 times. Repeat for the next three exercises."
     ]
   },
   {
-    "category": "Bulk",
-    "name": "Workout 8",
-    "level": "Beginner",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "bulk",
+    "name": [
+      "Dumbbell Squat Press",
+      "Kettlebell Sumo Squats with Upright Row",
+      "Squated Front Raises"
+    ],
+    "level": "beg",
+    "muscleGroups": [
+      "Shoulders",
+      "Legs",
+      "Glutes"
+    ],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform each exercise 10 times.  Rest one minute.  Repeat the circuit 3 times."
     ]
   },
   {
-    "category": "Bulk",
-    "name": "Workout 9",
-    "level": "Beginner",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "bulk",
+    "name": "HIIT Cardio",
+    "level": "beg",
+    "muscleGroups": [
+      "Cardio"
+    ],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Walk for 5 minutes at an easy pace to warm up.  Run 30 seconds.  Do 10 burpees. Rest 1 minute. Repeat 10 times.  Walk at an easy pace for a 5 minute cool down."
     ]
   },
   {
-    "category": "Bulk",
-    "name": "Workout 10",
-    "level": "Beginner",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "bulk",
+    "name": [
+      "Barbell Chest Press",
+      "Plank",
+      "Incline Push Ups",
+      "Side Plank",
+      "Push Ups",
+      "Side Plank"
+    ],
+    "level": "beg",
+    "muscleGroups": [
+      "Chest",
+      "Abs"
+    ],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform 10 of each chest exercise and 30 seconds for each plank.  Rest one minute.  Repeat circuit 3 times."
     ]
   },
   {
-    "category": "Bulk",
-    "name": "Workout 1",
-    "level": "Intermediate",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
-    ]
-  },
-  {
-    "category": "Bulk",
-    "name": "Workout 2",
-    "level": "Intermediate",
-    "muscleGroups": ["Chest", "Shoulders"],
-    "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
-    ]
-  },
-  {
-    "category": "Bulk",
-    "name": "Workout 3",
-    "level": "Intermediate",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
-    ]
-  },
-  {
-    "category": "Bulk",
-    "name": "Workout 4",
-    "level": "Intermediate",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
-    ]
-  },
-  {
-    "category": "Bulk",
-    "name": "Workout 5",
-    "level": "Intermediate",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
-    ]
-  },
-  {
-    "category": "Bulk",
-    "name": "Workout 6",
-    "level": "Intermediate",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
-    ]
-  },
-  {
-    "category": "Bulk",
-    "name": "Workout 7",
-    "level": "Intermediate",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
-    ]
-  },
-  {
-    "category": "Bulk",
-    "name": "Workout 8",
-    "level": "Intermediate",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
-    ]
-  },
-  {
-    "category": "Bulk",
-    "name": "Workout 9",
-    "level": "Intermediate",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
-    ]
-  },
-  {
-    "category": "Bulk",
-    "name": "Workout 10",
-    "level": "Intermediate",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
-    "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
-    ]
-  },
-  {
-    "category": "Bulk",
-    "name": "Workout 1",
+    "category": "bulk",
+    "name": [
+      "Barbell Back Squats",
+      "Barbell Reverse Lunges",
+      "Deadlifts",
+      "Cable Kickbacks"
+    ],
     "level": "inter",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "muscleGroups": [
+      "Glutes",
+      "Legs"
+    ],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform 10 reps each exercise.  Repeat 4 times."
     ]
   },
   {
-    "category": "Bulk",
-    "name": "Workout 2",
-    "level": "Advanced",
-    "muscleGroups": ["Chest", "Shoulders"],
+    "category": "bulk",
+    "name": [
+      "Dumbbell Overhead Extension",
+      "Push Ups",
+      "Dumbbell Shoulder Press",
+      "Tricep Kickbacks",
+      "Dumbbell Chest Flies",
+      "Lateral Raises",
+      "Tricep Dips",
+      "Dumbbell Chest Press",
+      "Dumbbell Front Raises"
+    ],
+    "level": "inter",
+    "muscleGroups": [
+      "Triceps",
+      "Shoulders",
+      "Chest"
+    ],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform 10 reps each of the first three exercises as a superset.  Rest 1 minute.  Repeat 4 times. Repeat for the next three exercises."
     ]
   },
   {
-    "category": "Bulk",
-    "name": "Workout 3",
-    "level": "Advanced",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "bulk",
+    "name": "Cardio",
+    "level": "inter",
+    "muscleGroups": [
+      "Cardio"
+    ],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Walk for 5 minutes at an easy pace to warm up. Walk at an incline of 15, speed 2.0 for 40 minutes.  Walk at an easy pace for a 5 minute cool down."
     ]
   },
   {
-    "category": "Bulk",
-    "name": "Workout 4",
-    "level": "Advanced",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "bulk",
+    "name": [
+      "Dumbbell Russian Twists",
+      "Dumbbell Cross Body Toe Touches",
+      "Plank",
+      "Side Planks"
+    ],
+    "level": "inter",
+    "muscleGroups": [
+      "Abs"
+    ],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform 10 reps each exercise.  Repeat 4 times."
     ]
   },
   {
-    "category": "Bulk",
-    "name": "Workout 5",
-    "level": "Advanced",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "bulk",
+    "name": [
+      "Dumbbell Curls",
+      "Barbell Bent Over Rows",
+      "Barbell Wide Curls",
+      "Dumbbell Single Arm Rows",
+      "Cable Hammer Curls",
+      "Seated Cable Row"
+    ],
+    "level": "inter",
+    "muscleGroups": [
+      "Biceps",
+      "Back"
+    ],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform 10 reps each of the first two exercises as a superset.  Rest 1 minute.  Repeat 4 times. Repeat for the next set of exercises."
     ]
   },
   {
-    "category": "Bulk",
-    "name": "Workout 6",
-    "level": "Advanced",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "bulk",
+    "name": [
+      "Cable Crunches",
+      "Cable Pull Throughs",
+      "Dumbbell Donkey Kicks",
+      "Barbell Glute Bridges",
+      "Weighted Lying Leg Lifts"
+    ],
+    "level": "inter",
+    "muscleGroups": [
+      "Glutes",
+      "Legs",
+      "Abs"
+    ],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform 10 reps each exercise.  Repeat 4 times."
     ]
   },
   {
-    "category": "Bulk",
-    "name": "Workout 7",
-    "level": "Advanced",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "bulk",
+    "name": [
+      "Dumbbell Hammer Curls",
+      "Barbell Close Grip Press",
+      "Renegade Row",
+      "Dumbbell Concentration Curls",
+      "Barbell Overhead Extensions",
+      "Dumbbell Pullovers"
+    ],
+    "level": "inter",
+    "muscleGroups": [
+      "Biceps",
+      "Triceps",
+      "Back"
+    ],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform 10 reps each of the first three exercises as a superset.  Rest 1 minute.  Repeat 4 times. Repeat for the next three exercises."
     ]
   },
   {
-    "category": "Bulk",
-    "name": "Workout 8",
-    "level": "Advanced",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "bulk",
+    "name": [
+      "Dumbbell Squat Press",
+      "Kettlebell Sumo Squats with Upright Row",
+      "Squated Front Raises"
+    ],
+    "level": "inter",
+    "muscleGroups": [
+      "Shoulders",
+      "Legs",
+      "Glutes"
+    ],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform each exercise 10 times.  Rest one minute.  Repeat the circuit 4 times."
     ]
   },
   {
-    "category": "Bulk",
-    "name": "Workout 9",
-    "level": "Advanced",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "bulk",
+    "name": "HIIT Cardio",
+    "level": "inter",
+    "muscleGroups": [
+      "Cardio"
+    ],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Walk for 5 minutes at an easy pace to warm up.  Run 30 seconds.  Do 10 burpees. Rest 1 minute. Repeat 10 times.  Walk at an easy pace for a 5 minute cool down."
     ]
   },
   {
-    "category": "Bulk",
-    "name": "Workout 10",
-    "level": "Advanced",
-    "muscleGroups": ["Abs", "Butt/Hips", "Legs"],
+    "category": "bulk",
+    "name": [
+      "Barbell Chest Press",
+      "Plank",
+      "Incline Push Ups",
+      "Side Plank",
+      "Push Ups",
+      "Side Plank"
+    ],
+    "level": "inter",
+    "muscleGroups": [
+      "Chest",
+      "Abs"
+    ],
     "instructions": [
-      "Four Rounds of the following:",
-      "Body Squats - 20 reps",
-      "Good Mornings - 20 reps"
+      "Perform 10 of each chest exercise and 45 seconds for each plank.  Rest one minute.  Repeat circuit 4 times."
+    ]
+  },
+  {
+    "category": "bulk",
+    "name": [
+      "Barbell Back Squats",
+      "Barbell Reverse Lunges",
+      "Deadlifts",
+      "Cable Kickbacks"
+    ],
+    "level": "adv",
+    "muscleGroups": [
+      "Glutes",
+      "Legs"
+    ],
+    "instructions": [
+      "Perform 10 reps each exercise.  Repeat 5 times."
+    ]
+  },
+  {
+    "category": "bulk",
+    "name": [
+      "Dumbbell Overhead Extension",
+      "Push Ups",
+      "Dumbbell Shoulder Press",
+      "Tricep Kickbacks",
+      "Dumbbell Chest Flies",
+      "Lateral Raises",
+      "Tricep Dips",
+      "Dumbbell Chest Press",
+      "Dumbbell Front Raises"
+    ],
+    "level": "adv",
+    "muscleGroups": [
+      "Triceps",
+      "Shoulders",
+      "Chest"
+    ],
+    "instructions": [
+      "Perform 10 reps each of the first three exercises as a superset.  Rest 1 minute.  Repeat 5 times. Repeat for the next three exercises."
+    ]
+  },
+  {
+    "category": "bulk",
+    "name": "Cardio",
+    "level": "adv",
+    "muscleGroups": [
+      "Cardio"
+    ],
+    "instructions": [
+      "Walk for 5 minutes at an easy pace to warm up. Walk at an incline of 15, speed 2.0 for 50 minutes.  Walk at an easy pace for a 5 minute cool down."
+    ]
+  },
+  {
+    "category": "bulk",
+    "name": [
+      "Dumbbell Russian Twists",
+      "Dumbbell Cross Body Toe Touches",
+      "Plank",
+      "Side Planks"
+    ],
+    "level": "adv",
+    "muscleGroups": [
+      "Abs"
+    ],
+    "instructions": [
+      "Perform 10 reps each exercise.  Repeat 5 times."
+    ]
+  },
+  {
+    "category": "bulk",
+    "name": [
+      "Dumbbell Curls",
+      "Barbell Bent Over Rows",
+      "Barbell Wide Curls",
+      "Dumbbell Single Arm Rows",
+      "Cable Hammer Curls",
+      "Seated Cable Row"
+    ],
+    "level": "adv",
+    "muscleGroups": [
+      "Biceps",
+      "Back"
+    ],
+    "instructions": [
+      "Perform 10 reps each of the first two exercises as a superset.  Rest 1 minute.  Repeat 5 times. Repeat for the next set of exercises."
+    ]
+  },
+  {
+    "category": "bulk",
+    "name": [
+      "Cable Crunches",
+      "Cable Pull Throughs",
+      "Dumbbell Donkey Kicks",
+      "Barbell Glute Bridges",
+      "Weighted Lying Leg Lifts"
+    ],
+    "level": "adv",
+    "muscleGroups": [
+      "Glutes",
+      "Legs",
+      "Abs"
+    ],
+    "instructions": [
+      "Perform 10 reps each exercise.  Repeat 5 times."
+    ]
+  },
+  {
+    "category": "bulk",
+    "name": [
+      "Dumbbell Hammer Curls",
+      "Barbell Close Grip Press",
+      "Renegade Row",
+      "Dumbbell Concentration Curls",
+      "Barbell Overhead Extensions",
+      "Dumbbell Pullovers"
+    ],
+    "level": "adv",
+    "muscleGroups": [
+      "Biceps",
+      "Triceps",
+      "Back"
+    ],
+    "instructions": [
+      "Perform 10 reps each of the first three exercises as a superset.  Rest 1 minute.  Repeat 5 times. Repeat for the next three exercises."
+    ]
+  },
+  {
+    "category": "bulk",
+    "name": [
+      "Dumbbell Squat Press",
+      "Kettlebell Sumo Squats with Upright Row",
+      "Squated Front Raises"
+    ],
+    "level": "adv",
+    "muscleGroups": [
+      "Shoulders",
+      "Legs",
+      "Glutes"
+    ],
+    "instructions": [
+      "Perform each exercise 10 times.  Rest one minute.  Repeat the circuit 5 times."
+    ]
+  },
+  {
+    "category": "bulk",
+    "name": "HIIT Cardio",
+    "level": "adv",
+    "muscleGroups": [
+      "Cardio"
+    ],
+    "instructions": [
+      "Walk for 5 minutes at an easy pace to warm up.  Run 30 seconds.  Do 10 burpees. Rest 1 minute. Repeat 10 times.  Walk at an easy pace for a 5 minute cool down."
+    ]
+  },
+  {
+    "category": "bulk",
+    "name": [
+      "Barbell Chest Press",
+      "Plank",
+      "Incline Push Ups",
+      "Side Plank",
+      "Push Ups",
+      "Side Plank"
+    ],
+    "level": "adv",
+    "muscleGroups": [
+      "Chest",
+      "Abs"
+    ],
+    "instructions": [
+      "Perform 10 of each chest exercise and 1 minute for each plank.  Rest one minute.  Repeat circuit 5 times."
     ]
   }
 ]
