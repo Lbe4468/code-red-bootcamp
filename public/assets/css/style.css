@@ -6,64 +6,41 @@
  * Made By MaterializeCSS.com
  */
 form {
-  border: 2px solid hsl(0, 63%, 40%);
-  margin: 1%;
-  padding: 1%;
+  margin: 1em;
+	padding: 1.5em;
 }
 #quick-start-sign-in,
 #quick-start-sign-up {
-  background-color: hsl(0, 63%, 40%);
+  background-color: hsl(0, 72%, 45%);
 }
 h1 {
   font-size: 5em;
-  font-style: strong;
+	font-style: strong;
+	color: hsl(0, 72%, 45%);
 }
 .header {
-  color: hsl(0, 63%, 40%);
+  color: hsl(0, 72%, 45%);
 }
 button,
-input,
 optgroup,
 select,
 textarea {
-  color: hsl(0, 63%, 40%);
+  color: hsl(0, 72%, 45%);
 }
 a:active,
 a:hover {
-  color: hsl(0, 63%, 40%);
+  color: hsl(0, 72%, 45%);
 }
-
-input:not([type]),
-input[type="text"]:not(.browser-default),
-input[type="password"]:not(.browser-default),
-input[type="email"]:not(.browser-default),
-input[type="url"]:not(.browser-default),
-input[type="time"]:not(.browser-default),
-input[type="date"]:not(.browser-default),
-input[type="datetime"]:not(.browser-default),
-input[type="datetime-local"]:not(.browser-default),
-input[type="tel"]:not(.browser-default),
-input[type="number"]:not(.browser-default),
-input[type="search"]:not(.browser-default),
-textarea.materialize-textarea {
-  border-bottom: hsl(0, 63%, 40%);
-  box-shadow: hsl(0, 63%, 40%);
-  color: hsl(0, 63%, 40%);
-}
-
 nav ul a,
 nav .brand-logo {
-  color: #444;
+  color: lightgrey;
 }
-
 p {
   line-height: 2rem;
 }
-
 .button-collapse {
-  color: hsl(0, 63%, 40%);
+  color: hsl(0, 72%, 45%);
 }
-
 .parallax-container {
   min-height: 380px;
   line-height: 0;
@@ -73,7 +50,6 @@ p {
 .parallax-container .section {
   width: 100%;
 }
-
 @media only screen and (max-width: 992px) {
   .parallax-container .section {
     position: absolute;
@@ -83,118 +59,110 @@ p {
     top: 10%;
   }
 }
-
 @media only screen and (max-width: 600px) {
   #index-banner .section {
     top: 0;
   }
 }
-
 .icon-block {
   padding: 0 15px;
 }
 .icon-block .material-icons {
   font-size: inherit;
 }
-
 footer.page-footer {
   margin: 0;
 }
-
 .nav-wrapper {
   color: #333;
 }
-
 #workoutsRow {
   text-align: center;
   margin-top: 1em;
-  color: hsl(0, 63%, 40%);
+  color: hsl(0, 72%, 45%);
   font-size: 3em;
 }
-
 h4 {
-  color: hsl(0, 63%, 40%);
-
+  color: hsl(0, 72%, 45%);
   text-align: center;
 }
-
 #dashboardHeader {
-	margin-top: 1.25em;
-	font-size: 6.5em;
-	color:hsl(0, 63%, 40%);
+  margin-top: 1.25em;
+  font-size: 6.5em;
+  color: hsl(0, 72%, 45%);
 }
-
 #userPic {
   text-align: center;
 }
-
 #userInfo {
-	text-align: center;
-	color: hsl(0, 6%, 25%);
-	font-size: 1.5em;
+  text-align: center;
+  color: hsl(0, 6%, 25%);
+  font-size: 1.5em;
 }
-
 #profile-image {
   margin-top: 1em;
 }
-
 #clickToUpdate {
-  color: hsl(0, 63%, 40%);
+  color: hsl(0, 72%, 45%);
 }
-
 li {
   color: hsl(0, 6%, 25%);
-	font-size: 1.5em;
+  font-size: 1.5em;
 }
-
 footer {
-  background-color: hsl(0, 6%, 25%);
+  /* background-color: hsl(0, 6%, 25%); */
 }
-
 .page-footer {
-  background-color: hsl(0, 63%, 40%);
+  background-color: hsl(0, 72%, 45%);
 }
-
 #profileInfo {
-	color: hsl(0, 63%, 40%);
-	border-bottom: 	hsl(0, 63%, 40%) solid 4px;
-	border-bottom-width: 15px;
+  color: hsl(0, 72%, 45%);
 }
-
 #profileWorkouts {
-	color: hsl(0, 63%, 40%);
-	border-bottom: 	hsl(0, 63%, 40%) solid 4px;
-	border-bottom-width: 15px;
+  color: hsl(0, 72%, 45%);
 }
-
-#rowsAndRowsAndRows {
-	margin-left: 5%;
-	margin-right: 7.5%;
-}
-
-#rowsAndRowsAnd {
-	margin-left: 5%;
-}
-
-#rowsAndRows {
-	margin-left: 10%;
-}
-
 h5 {
-	margin-top: 1.5em;
-	background-color: hsl(0, 63%, 40%);
+  margin-top: 1.5em;
+  background-color: hsl(0, 72%, 45%);
 	color: lightgray;
+	padding: .25em;
 }
-
 h6 {
-	font-size: 2.5em;
+  font-size: 2.5em;
 }
-
 #video-query {
-	width: 20%;
-	border: solid 1px hsl(0, 63%, 40%); 
+  width: 20%;
+  border: solid 1px hsl(0, 72%, 45%);
+}
+#search-button {
+  background-color: hsl(0, 72%, 45%);
+}
+#createAccount {
+}
+#loginAccount {
+}
+h2 {
+	color: hsl(0, 72%, 45%);
+}
+#pageFooter {
+	background-color: black;
+}
+#footerCopy {
+	background-color: black;
+	padding-left: 42%;
+}
+.bio {
+	font-size: 2em;
+	color: lightgrey;
+}
+.teamNames {
+	font-size: .75em;
+	color: hsl(0, 72%, 45%);
+}
+.bioPara {
+	color: hsl(0, 72%, 45%);
+}
+.botto {
+	padding: 2.5em;
 }
 
-#search-button {
-	background-color: hsl(0, 63%, 40%);
-}

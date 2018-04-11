@@ -412,6 +412,7 @@ $(function() {
     });
   });
 
+
   // var uploader = $("#uploader");
   // var fileButton = $("#file-input");
   // // Event to trigger file select to upload profile picture to firebase
