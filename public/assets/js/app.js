@@ -1,3 +1,4 @@
+
 $(function() {
   // api key...
   var bmi = {
@@ -452,6 +453,7 @@ $(function() {
   //   });
   // });
 
+
   // Event to trigger file select to upload profile picture to firebase
   // $("#profile-image").on("click", function() {
   //   // event to activate/show image file selection/upload
@@ -477,3 +479,4 @@ $(function() {
   //   });
   // });
 });
+
